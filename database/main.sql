@@ -15,5 +15,8 @@
 -- Popula cidades
 @/opt/scripts/dml/inserts_cidades.sql
 
+-- Popula ceps
+@/opt/scripts/dml/inserts_ceps.sql
+
 -- Fim
 PROMPT Banco de dados recriado com sucesso!

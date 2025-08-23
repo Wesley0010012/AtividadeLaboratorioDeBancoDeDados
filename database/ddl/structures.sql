@@ -2,6 +2,13 @@
 -- RELAÇÕES
 -- Define as entidades do minimundo
 ---------------------------------------
+-- RELACAO CEP
+CREATE TABLE CEP (
+    CEP_ID NUMBER (9),
+    CEP_LATITUDE NUMBER (9, 6),
+    CEP_LONGITUDE NUMBER (9, 6),
+    CEP_CDD_ID NUMBER (4)
+) LOGGING;
 -- RELACAO CIDADE
 CREATE TABLE CIDADE (
     CDD_ID NUMBER (4),
