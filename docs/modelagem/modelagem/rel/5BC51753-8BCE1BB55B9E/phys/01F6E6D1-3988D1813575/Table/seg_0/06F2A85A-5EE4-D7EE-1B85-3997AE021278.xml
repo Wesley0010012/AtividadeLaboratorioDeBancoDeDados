@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CEP" directorySegmentName="seg_0" id="06F2A85A-5EE4-D7EE-1B85-3997AE021278">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CIDADE_CDD_ID" id="563B471B-285F-BF05-6F28-55A21CA34388">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CIDADE_ETD_ID" id="6607CEA2-C5DD-FCA0-223A-12354E13037E">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLIENTE_CLI_ID" id="7835B0A5-2F6B-EFE8-AC44-59E1C930E2C3">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CEP_ID" id="A7F9A19D-8988-07DC-DE96-726E0143ABB7">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CEP_LONGITUDE" id="C9662048-07AA-0F66-6406-9E3FEC6DDDED">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VENDEDOR_VDD_ID" id="EAB9379A-2090-F2E5-E5FC-A8444D217AB3">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CEP_LATITUDE" id="F42193A1-D276-47BF-EA32-A1BED352A5C6">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CEP_CIDADE_FK" id="398A3557-691B-F52F-4115-6C9E564AC5FC">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CEP_VENDEDOR_FK" id="DADA9A41-2A41-2CC0-D646-1F3698A7733F">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CEP_CLIENTE_FK" id="F8137B85-4CF5-5470-C1EA-EB80FECABEC5">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CEP_PK" id="EDF013D8-B123-3E42-8F38-8D182FB44401">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5896276E-FC3B-5D52-EF5C-DD37324D0380" name="CIDADE">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR CIDADES]]></commentInRDBMS>
+<generatorID>0C8FFA5E-E8FD-E5CE-32EB-08C6338DF7AC</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CDD_ID" id="F490493F-9004-9891-1D07-F8C8B0C741D6">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO PARA CIDADE]]></commentInRDBMS>
+<generatorID>DD4125A2-34BD-99AA-0266-13F0B5941608</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CDD_NOME" id="D9BBEFF9-30C0-0219-C473-85BCA704C764">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[NOME DA CIDADE]]></commentInRDBMS>
+<generatorID>F01C3249-B7BD-3777-10AA-4AD07AC24481</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ETD_ID" id="E3EB3C78-550A-A699-5BD3-A1299B88320C">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:44:42 UTC</createdTime>
+<generatorID>1E64D404-069B-1791-42BF-EFA176AB344A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<referedAttribute>3781D636-6F64-30F0-2E69-F0E1BB7FB39C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7BC68C2A-F849-3F33-A5C4-A591E0582B62" name="CIDADE PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:38:56 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F490493F-9004-9891-1D07-F8C8B0C741D6</attributeRef>
+<attributeRef>E3EB3C78-550A-A699-5BD3-A1299B88320C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

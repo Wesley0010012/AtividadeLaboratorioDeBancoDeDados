@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D34E29C-09A5-2406-D567-BBAEF64B1134" name="ITEMS_COMPRA">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE COMPRAS E PRODUTOS PRESENTES NO ATO DA COMPRA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUTO_PRD_ID" id="292B6FE5-FD6C-D7D4-A606-489CB7396DFF">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD797F8F-B2B9-3B9F-DC5E-12F567B6C938" referredColumn="74A6B6E4-599F-A1B7-74AF-A667C8154E5F"/>
+</associations>
+</Column>
+<Column name="COMPRA_COMPRA_ID" id="13AE76D8-2CDF-5D65-CF69-6B10550DEFF4">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="649293F4-1FEC-74A6-84AF-7660298B43C5" referredColumn="85009A03-A4BA-2527-4274-30C7B01D6B84"/>
+</associations>
+</Column>
+<Column name="ITC_FRETE" id="AE89E8AA-9F1A-A109-BD29-562F0D597611">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<comment><![CDATA[FRETE ASSOCIADO AO ITEM]]></comment>
+<generatorID>CAA2A80B-CDFD-5A54-40A5-54B2568AAD0A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="ITC_QUANTIDADE" id="9554D03C-8810-2BE0-71C3-0D0E92FAB69F">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<comment><![CDATA[QUANTIDADE DO ITEM]]></comment>
+<generatorID>AA600248-5DAE-F11E-90B3-EE8CECDF25DC</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03199AC8-A15C-B6FE-5DE7-FC8760666153" name="ITEMS_COMPRA_PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="292B6FE5-FD6C-D7D4-A606-489CB7396DFF"/>
+<colUsage columnID="13AE76D8-2CDF-5D65-CF69-6B10550DEFF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B36CE209-620C-4A13-74F0-2DAE534633E5" name="ITEMS_COMPRA_PRODUTO_FK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<generatorID>36687803-F561-885A-F724-B2E5C0DD7677</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="292B6FE5-FD6C-D7D4-A606-489CB7396DFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03887ADD-4A09-BD08-A816-5F123557457D" name="ITEMS_COMPRA_COMPRA_FK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<generatorID>36687803-F561-885A-F724-B2E5C0DD7677</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13AE76D8-2CDF-5D65-CF69-6B10550DEFF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="29C18657-1E05-AECB-6E9E-31CE2A56D3F5" name="TRANSACOES_PAGAMENTO">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO  RESPONSÁVEL POR PERSISTIR AS TRANSAÇÕES ASSOCIADAS A UM PAGAMENTO]]></commentInRDBMS>
+<generatorID>E4AFB8BC-4915-8BA4-9725-9B282DE9992C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TNP ID" id="9DCFB186-D711-CC7C-3993-79F6DE59597B">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DA TRANSAÇÃO]]></commentInRDBMS>
+<generatorID>02136BDB-D96F-236B-E876-7F1EF2993A98</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TNP_VALOR_PAGO" id="9EFFC77F-9B21-F02A-3B6E-63E095E12002">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[VALOR PAGO NA TRANSAÇÃO]]></commentInRDBMS>
+<generatorID>F94849F9-1780-F5BD-B2E8-D5502083863A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PGM_ID" id="FA23B83C-9EF6-866C-1962-2A5E08291FBD">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 22:14:47 UTC</createdTime>
+<generatorID>B0A17A9D-B7E8-1D45-7636-85493DEE2225</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<referedAttribute>1124123B-7997-2D06-2C12-3ADC7F0B61CE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TPG_ID" id="F6F64751-78E1-7612-5208-722F56E18681">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 01:00:41 UTC</createdTime>
+<generatorID>5E15C266-EA3F-36AF-0699-B4BB8AB88C7E</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<referedAttribute>7788009E-EB9E-D7AC-A118-BA7CF4304469</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="93CF6E6E-8973-54BC-FBCD-5A4D68417900" name="TRANSACOES PAGAMENTO PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 22:12:33 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9DCFB186-D711-CC7C-3993-79F6DE59597B</attributeRef>
+<attributeRef>FA23B83C-9EF6-866C-1962-2A5E08291FBD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COMPRA_AVALIACAO_COMPRA" directorySegmentName="seg_0" id="A76EA6A3-02D8-F83F-B1F6-8DC02C2B7A76">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 20:56:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE COMPRAS E AVALIAÇÕES DE COMPRA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<dominantRole>7A4F457B-9EBF-AFDE-4068-2DAE4154F1E0</dominantRole>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>50B1F904-8816-876B-634C-DA70F6700AB2</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>7A4F457B-9EBF-AFDE-4068-2DAE4154F1E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

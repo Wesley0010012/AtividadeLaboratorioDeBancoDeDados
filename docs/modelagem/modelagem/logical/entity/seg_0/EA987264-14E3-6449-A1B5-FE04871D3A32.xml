@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EA987264-14E3-6449-A1B5-FE04871D3A32" name="HISTORICO_SITUACAO_COMPRA">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR O HISTÓRICO DE SITUAÇÕES DE UMA COMPRA]]></commentInRDBMS>
+<generatorID>8C8B50EA-048C-DCFD-8B28-A1956DFA009A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="HSC_ID" id="48610A78-FC95-C02D-D348-65995864500C">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO PARA O HISTÓRICO DE SITUAÇÃO]]></commentInRDBMS>
+<generatorID>3BA0807F-B2F4-3DA4-BA3C-B392F9FA789B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HSC_DATA_ATUALIZACAO" id="93089612-1092-B028-84D7-7ABA89EBF537">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA E HORA DA ÚLTIMA ATUALIZAÇÃO]]></commentInRDBMS>
+<generatorID>50E71967-E337-C245-FB6A-25F803D6B538</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STC_ID" id="8A6138FE-C8F1-0AB6-85BA-D5ECB545FD75">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 18:43:33 UTC</createdTime>
+<generatorID>7819492A-4C3B-05B2-8CFF-F17F557CCECC</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<referedAttribute>BA99696D-C408-C73D-987C-88423FF1B1E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2005BED3-D806-2842-70EF-3FC2A24EE062" name="HISTORICO SITUACAO COMPRA PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 23:19:10 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>48610A78-FC95-C02D-D348-65995864500C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

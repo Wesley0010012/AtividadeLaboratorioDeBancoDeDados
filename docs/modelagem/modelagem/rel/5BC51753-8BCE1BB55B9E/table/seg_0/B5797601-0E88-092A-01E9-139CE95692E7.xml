@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5797601-0E88-092A-01E9-139CE95692E7" name="ESTADO">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR OS ESTADOS]]></commentInRDBMS>
+<generatorID>4CADCE25-2517-8913-BF7A-4DDC8292E67A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ETD_ID" id="0A5DD1C6-988E-6057-65DC-D0820B2314F5">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO ESTADO]]></commentInRDBMS>
+<generatorID>3781D636-6F64-30F0-2E69-F0E1BB7FB39C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETD_NOME" id="A034C7C1-53E7-1DD9-B4ED-800D963B59C6">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[NOME DO ESTADO]]></commentInRDBMS>
+<generatorID>93C3553E-F658-5613-A3F0-28BF2B6668CC</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC2BC019-EBB0-60E9-8004-123A0B22FBEF" name="ESTADO_PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<generatorID>C49B61FD-4F0C-A7CC-FE1D-EB6C66D7863B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A5DD1C6-988E-6057-65DC-D0820B2314F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

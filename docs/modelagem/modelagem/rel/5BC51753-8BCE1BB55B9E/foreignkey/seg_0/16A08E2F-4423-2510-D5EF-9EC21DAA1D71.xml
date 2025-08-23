@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="16A08E2F-4423-2510-D5EF-9EC21DAA1D71" containerWithKeyObject="00893ED8-E0B4-766F-49D7-EE947F6D4D3A" localFKIndex="65458EC9-E225-8ED5-8DEC-E0D106839719" name="COMPRA_VENDEDOR_FK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE VENDEDORES E COMPRAS]]></commentInRDBMS>
+<generatorID>FD20B4A8-3D85-273F-7F99-39020874D81F</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>VENDEDOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A6127740-5E13-87BF-0786-90E47FA37358</referredTableID>
+<keyObject>37187EA4-79B2-04E0-2432-B67950B33E27</keyObject>
+<referredKeyID>37187EA4-79B2-04E0-2432-B67950B33E27</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>VDD_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

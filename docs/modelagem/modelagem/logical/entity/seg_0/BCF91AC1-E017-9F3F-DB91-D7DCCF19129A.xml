@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BCF91AC1-E017-9F3F-DB91-D7DCCF19129A" name="SITUACAO_COMPRA">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR OS TIPOS DE SITUAÇÃO DE COMPRA]]></commentInRDBMS>
+<generatorID>894E4948-9C7C-96AA-F53E-D3E1AD87D891</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="STC_ID" id="BA99696D-C408-C73D-987C-88423FF1B1E2">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DA SITUAÇÃO DE COMPRA]]></commentInRDBMS>
+<generatorID>27AEA89E-9FA7-1341-438B-94F8F6E11C47</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STC_STATUS" id="DB633FCA-1C3D-6D29-1456-BC873DD5AFAD">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[STATUS DA SITUAÇÃO DE COMPRA]]></commentInRDBMS>
+<generatorID>9AC73CF9-B705-C740-40CA-1A8B94D73F90</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6280075C-A9DA-406F-CDF6-A4710523635F" name="SITUACAO COMPRA PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 20:40:49 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BA99696D-C408-C73D-987C-88423FF1B1E2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

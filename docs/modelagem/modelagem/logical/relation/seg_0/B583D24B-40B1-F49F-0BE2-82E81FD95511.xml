@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CLIENTE_CEP" directorySegmentName="seg_0" id="B583D24B-40B1-F49F-0BE2-82E81FD95511">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 18:29:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE CLIENTES E CEPS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<sourcePk>1B13D695-536C-2809-ABD6-12D56949DE06</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A69745EA-DA2B-BBB3-2115-EBADC6BDEB9C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CAEF656C-B07E-052E-B100-BC9CFC3D55BA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

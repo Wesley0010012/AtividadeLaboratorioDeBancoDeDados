@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A69745EA-DA2B-BBB3-2115-EBADC6BDEB9C" name="CLIENTE">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR OS CLIENTES]]></commentInRDBMS>
+<generatorID>E6D2498D-BFF2-61A8-0CBE-C471B0A0EE8E</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CLI_ID" id="AB299D57-3A6C-8123-B52D-2F7E3D84B0A0">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 18:29:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO CLIENTE]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CLI_ASSINATURA" id="B03798E9-0FC9-EAAB-BB3F-207293E73C76">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 18:29:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[ASSINATURA DO CLIENTE]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1B13D695-536C-2809-ABD6-12D56949DE06" name="CLIENTE PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 18:30:01 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AB299D57-3A6C-8123-B52D-2F7E3D84B0A0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

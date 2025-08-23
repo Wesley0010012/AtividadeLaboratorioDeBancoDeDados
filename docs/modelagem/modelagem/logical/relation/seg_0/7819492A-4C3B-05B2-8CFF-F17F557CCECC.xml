@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_24" directorySegmentName="seg_0" id="7819492A-4C3B-05B2-8CFF-F17F557CCECC">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 18:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE SITUAÇÕES DE COMPRA E HISTÓRICO DE SITUAÇÕES DE UMA COMPRA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<sourcePk>6280075C-A9DA-406F-CDF6-A4710523635F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BCF91AC1-E017-9F3F-DB91-D7DCCF19129A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EA987264-14E3-6449-A1B5-FE04871D3A32</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

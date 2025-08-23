@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="46630FB5-0424-E912-334A-46DA0194C961" name="CLIENTE">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR OS CLIENTES]]></commentInRDBMS>
+<generatorID>A69745EA-DA2B-BBB3-2115-EBADC6BDEB9C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLI_ID" id="3351D718-CEB2-F04F-769B-3CB0FD2D2C2C">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO CLIENTE]]></commentInRDBMS>
+<generatorID>AB299D57-3A6C-8123-B52D-2F7E3D84B0A0</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLI_ASSINATURA" id="B0C6D091-BB3B-8FC9-4D39-06D248190F94">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[ASSINATURA DO CLIENTE]]></commentInRDBMS>
+<generatorID>B03798E9-0FC9-EAAB-BB3F-207293E73C76</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C561F601-39F7-801D-31A7-8B8885DB56A9" name="CLIENTE_PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<generatorID>1B13D695-536C-2809-ABD6-12D56949DE06</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3351D718-CEB2-F04F-769B-3CB0FD2D2C2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

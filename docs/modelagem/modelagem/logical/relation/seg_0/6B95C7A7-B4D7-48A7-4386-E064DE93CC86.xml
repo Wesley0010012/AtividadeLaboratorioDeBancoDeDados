@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COMPRA_HISTORICO__SITUACAO_COMPRA" directorySegmentName="seg_0" id="6B95C7A7-B4D7-48A7-4386-E064DE93CC86">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 18:43:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE COMPRAS E HISTÓRICO DE SITUAÇÕES DE UMA COMPRA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7A4F457B-9EBF-AFDE-4068-2DAE4154F1E0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EA987264-14E3-6449-A1B5-FE04871D3A32</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

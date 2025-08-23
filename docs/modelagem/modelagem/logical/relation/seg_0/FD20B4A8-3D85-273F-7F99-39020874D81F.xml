@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VENDEDOR_COMPRA" directorySegmentName="seg_0" id="FD20B4A8-3D85-273F-7F99-39020874D81F">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 18:44:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE VENDEDORES E COMPRAS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<sourcePk>998B0301-A722-9961-9E4C-13D0D0FDAE9C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DFF2784F-5104-6391-7C2D-FCF5D0E7745F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7A4F457B-9EBF-AFDE-4068-2DAE4154F1E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

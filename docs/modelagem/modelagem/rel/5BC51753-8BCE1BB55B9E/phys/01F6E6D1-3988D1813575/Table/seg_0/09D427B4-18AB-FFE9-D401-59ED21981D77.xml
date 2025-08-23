@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TIPO_PAGAMENTO" directorySegmentName="seg_0" id="09D427B4-18AB-FFE9-D401-59ED21981D77">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TPG_ID" id="297AF964-5604-E34B-EC52-A8D730531497">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TPG_CATEGORIA" id="DAF2FB31-42DB-621D-F7E1-614F8D0384BF">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TIPO_PAGAMENTO_PK" id="281E6D3B-509A-07D5-E2CE-AEAC5EC5E106">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

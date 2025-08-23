@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="50B1F904-8816-876B-634C-DA70F6700AB2" name="AVALIACAO_COMPRA">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL PELA PERSISTÊNCIA DE AVALIAÇÕES DE COMPRAS]]></commentInRDBMS>
+<generatorID>5B45E039-DB60-D9E9-9A04-D595FBE0F05F</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ALC_ID" id="4E3D617F-636D-FD0F-0619-5A228A6E5978">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DA AVALIAÇÃO]]></commentInRDBMS>
+<generatorID>065B36B3-3E1F-7B4E-6160-4AA0069D3C37</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ALC_SCORE" id="3CAEFE52-EC10-EB1A-DD31-4C21C75CB21A">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[SCORE DADO A COMPRA]]></commentInRDBMS>
+<generatorID>78B097E0-1432-0CAD-0C3E-6B6C6D8CD5A9</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ALC_TITULO" id="4EFA2BA2-2B6B-8456-932D-44C9894617CA">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[TÍTULO DA AVALIAÇÃO]]></commentInRDBMS>
+<generatorID>A8E8DCCC-3829-DA85-C6D0-257B9BA88141</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90 CHAR</dataTypeSize>
+<ownDataTypeParameters>90 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ALC_MENSAGEM" id="61049C60-C5F0-0656-C8AE-726B2DD9E0F2">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[MENSAGEM DA AVALIAÇÃO]]></commentInRDBMS>
+<generatorID>BCF8ACBA-E460-1391-6D39-76DC05E55C8A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ALC_DATA_HORA_CRIACAO" id="F036D642-ADF7-24B3-08D3-0D2982944820">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DA INSCRIÇÃO DA AVALIAÇÃO]]></commentInRDBMS>
+<generatorID>DD94C49E-131C-CCD8-BFBF-5CF634EA8CBE</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4E09D113-2065-2FD7-660E-92F6ADEA583C" name="AVALIACAO COMPRA PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 23:22:58 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4E3D617F-636D-FD0F-0619-5A228A6E5978</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

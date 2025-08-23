@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CIDADE_CEP" directorySegmentName="seg_0" id="29CF655D-2AAB-A25D-AB40-6CC5F83BDA6C">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 20:10:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE CIDADES E CEPS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<sourcePk>7BC68C2A-F849-3F33-A5C4-A591E0582B62</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5896276E-FC3B-5D52-EF5C-DD37324D0380</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CAEF656C-B07E-052E-B100-BC9CFC3D55BA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

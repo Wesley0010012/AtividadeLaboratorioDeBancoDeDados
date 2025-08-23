@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="AVALIACAO_COMPRA" directorySegmentName="seg_0" id="7B92054D-F79D-AAC5-5C43-B21B7C862549">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ALC_ID" id="5B822018-9B3D-5D3C-D5D3-BE2D453022B5">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALC_SCORE" id="80398394-FB5A-5798-991C-EF55F7668C60">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMPRA_COMPRA_ID" id="8B7D6D20-C45C-0C82-D2F6-BFE120B0BFBD">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALC_DATA_HORA_CRIACAO" id="C57D9541-DC6D-73A5-6615-C4C77B3877D8">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALC_TITULO" id="DB801777-D326-90CB-688D-898BAA322F47">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALC_MENSAGEM" id="E804AB79-882D-08B3-B407-A6682BBE774A">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="AVALIACAO_COMPRA__IDX" id="3D5FF890-F772-5546-F115-38E9556241EF">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="AVALIACAO_COMPRA_COMPRA_FK" id="242E6DA1-E3FE-251D-D803-F215CB31F832">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="AVALIACAO_COMPRA_PK" id="7FD6CD95-944A-66B1-F6CB-F24A8E5F3B59">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

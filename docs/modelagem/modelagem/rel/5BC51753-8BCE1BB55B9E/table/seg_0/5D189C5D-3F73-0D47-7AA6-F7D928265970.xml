@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D189C5D-3F73-0D47-7AA6-F7D928265970" name="CATEGORIA_PRODUTO">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR AS CATEGORIAS DE UM PRODUTO]]></commentInRDBMS>
+<generatorID>8C53FEA8-3F58-0827-B31E-21D2BECFA6CA</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CTP_ID" id="6F175B86-036B-EDB5-4DF2-9749D8EC0640">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR DA CATEGORIA]]></commentInRDBMS>
+<generatorID>5F8A1F6F-24BD-9F47-4119-DD1E16956844</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTP_NOME" id="0CDD8119-6D01-BA8A-38DC-994266D1EAB7">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[NOME DA CATEGORIA DO PRODUTO]]></commentInRDBMS>
+<generatorID>F0B9FA98-DE6F-74E0-7191-FB0496EECD2F</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTP_NOME_INGLES" id="2AF03039-AAC9-0B33-1FF9-121CFA39FE8D">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[NOME TRADUZIDO EM INGLÊS DA CATEGORIA]]></commentInRDBMS>
+<generatorID>9CC6224E-29A6-4FB3-3788-5CCDB0457B0B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86D2EA11-EDAA-1790-C1E8-317A1D86B336" name="CATEGORIA_PRODUTO_PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<generatorID>DCE4BACF-FF07-56F1-CEBB-70D0B827F686</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F175B86-036B-EDB5-4DF2-9749D8EC0640"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

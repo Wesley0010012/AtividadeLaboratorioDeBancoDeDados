@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_14" directorySegmentName="seg_0" id="B0A17A9D-B7E8-1D45-7636-85493DEE2225">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 20:57:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE PAGAMENTOS E TRANSAÇÕES DE UM PAGAMENTO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<targetPk>8524FA10-8E7D-40FE-92A5-765A24EFE107</targetPk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>29C18657-1E05-AECB-6E9E-31CE2A56D3F5</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>9B4F5ABF-07F7-E728-6E97-415EF3F97C7E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

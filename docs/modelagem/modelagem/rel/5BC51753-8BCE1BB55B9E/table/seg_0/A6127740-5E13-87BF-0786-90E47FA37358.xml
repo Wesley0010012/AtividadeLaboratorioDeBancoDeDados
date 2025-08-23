@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6127740-5E13-87BF-0786-90E47FA37358" name="VENDEDOR">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL PELAS INFORMAÇÕES DO VENDEDOR]]></commentInRDBMS>
+<generatorID>DFF2784F-5104-6391-7C2D-FCF5D0E7745F</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VDD_ID" id="CFA3A67D-1C10-0FAB-94B9-C5872A958FDF">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO VENDEDOR
+]]></commentInRDBMS>
+<generatorID>143D3A05-5989-4F3E-7EE7-236233F146DF</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VDD_ASSINATURA" id="58B9CD42-9A0C-99AC-AB9C-8FC135A3258A">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[ASSINATURA DO VENDEDOR]]></commentInRDBMS>
+<generatorID>821DA074-5394-574D-4505-098821D11FC0</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37187EA4-79B2-04E0-2432-B67950B33E27" name="VENDEDOR_PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-23 20:17:51 UTC</createdTime>
+<generatorID>998B0301-A722-9961-9E4C-13D0D0FDAE9C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFA3A67D-1C10-0FAB-94B9-C5872A958FDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

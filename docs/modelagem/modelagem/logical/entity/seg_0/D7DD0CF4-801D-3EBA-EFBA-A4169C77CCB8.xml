@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D7DD0CF4-801D-3EBA-EFBA-A4169C77CCB8" name="TIPO PAGAMENTO">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR DEFINIR OS TIPOS DE PAGAMENTO DE UMA TRANSAÇÃO DE COMPRA]]></commentInRDBMS>
+<generatorID>A5969133-AA65-83F6-8327-A3BD7B85EF69</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TPG_ID" id="7788009E-EB9E-D7AC-A118-BA7CF4304469">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO TIPO DE PAGAMENTO]]></commentInRDBMS>
+<generatorID>8B61C6AB-66B9-6E60-578C-38FCE58217FD</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TPG_CATEGORIA" id="B65F701E-C748-C6ED-F8D0-42E02EE751EB">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 02:34:22 UTC</createdTime>
+<comment><![CDATA[CATEGORIA DO TIPO DE PAGAMENTO]]></comment>
+<generatorID>D7BA6CD1-CE7B-5E0D-F875-F3CA62E2AF1C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0B46D43B-09A0-08F6-E186-7CA12B0EE5D4" name="TIPO PAGAMENTO PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-22 20:48:18 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7788009E-EB9E-D7AC-A118-BA7CF4304469</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
