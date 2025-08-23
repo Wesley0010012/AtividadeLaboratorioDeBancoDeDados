@@ -1,0 +1,19 @@
+services:
+  database:
+    image: oracle/database:21.3.0-ee
+    container_name: oracle21c-labdb
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+    environment:
+      ORACLE_SID: ORCLCDB
+      ORACLE_PDB: ORCLPDB1
+      ORACLE_PWD: ABC12345
+      ORACLE_MEM: 2000
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - ./oracle_data:/opt/oracle/oradata
+      - ./scripts:/opt/scripts
