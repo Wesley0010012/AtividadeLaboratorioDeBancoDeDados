@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CEP" directorySegmentName="seg_1" id="2284F105-648C-4C2D-3C6C-DD0F1EB4FEBC">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CEP_LONGITUDE" id="1C91CB95-39B9-6D37-8C4B-83375F09B63F">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CEP_ID" id="332DA7ED-8280-2882-AE40-A2E24C2B9ED9">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CEP_CDD_ID" id="7A3F1AAE-7ECD-5F2B-60F5-454988FBBC15">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CEP_LATITUDE" id="977B47BA-B27D-923C-1DA6-1DA238DFFBA0">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CEP_CDD_FK" id="25A584C2-BE0D-579A-AFFC-9C96AA275CF3">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CEP" id="BB039179-3826-06BF-FE73-09381DCD8743">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

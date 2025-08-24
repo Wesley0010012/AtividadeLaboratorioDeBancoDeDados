@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="AVALIACAO_COMPRA" directorySegmentName="seg_1" id="BAA1016A-1DEB-1E5D-EBAE-A82CD79563A6">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ALC_TITULO" id="0AB91672-34D8-DC9D-9491-44792CA4E30C">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALC_DATA_HORA_CRIACAO" id="75E0642D-AEC1-3216-B29E-BE7F72FDA785">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALC_CMP_ID" id="871050D2-C32C-8754-AD93-8464FD694870">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:56:11 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALC_MENSAGEM" id="975FDF76-1DCC-84CF-237D-0BB79A1A1B6C">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALC_SCORE" id="A366B177-F7E2-7A78-A652-0CED46699946">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ALC_ID" id="E42F7F5F-BBB7-1CF7-D747-04824A24B666">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ALC_CMP" id="90D7DB04-1C9A-9C71-E232-A49508AB726D">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ALC_PK" id="0D5C179F-FAD3-DA4C-58C9-6EAC691916E5">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

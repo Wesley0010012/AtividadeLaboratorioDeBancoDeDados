@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7E321552-4177-8F0D-89DB-190BABA0C9FA" containerWithKeyObject="2284F105-648C-4C2D-3C6C-DD0F1EB4FEBC" localFKIndex="25A584C2-BE0D-579A-AFFC-9C96AA275CF3" name="CEP_CDD_FK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE CIDADES E CEPS]]></commentInRDBMS>
+<generatorID>29CF655D-2AAB-A25D-AB40-6CC5F83BDA6C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>CIDADE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A016D022-E5D5-A3C7-A40F-B959F1E2B25A</referredTableID>
+<keyObject>47D2E734-82CA-0E57-4EBD-91044EA68FFC</keyObject>
+<referredKeyID>47D2E734-82CA-0E57-4EBD-91044EA68FFC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CDD_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

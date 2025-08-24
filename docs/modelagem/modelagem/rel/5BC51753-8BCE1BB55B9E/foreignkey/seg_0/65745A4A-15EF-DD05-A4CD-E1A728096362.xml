@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="65745A4A-15EF-DD05-A4CD-E1A728096362" containerWithKeyObject="BB047441-768B-44E0-7587-D3EF7C4D62CD" localFKIndex="B24C4F3A-33C4-A360-107A-4A55BFA581E4" name="FK_PGM_CMP">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE COMPRAS E PAGAMENTOS]]></commentInRDBMS>
+<generatorID>ECA90D1A-E94B-2B4C-ED44-6C2E2172B8CD</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>COMPRA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FBF8F452-8D17-9A57-67F0-0162E7EFA85C</referredTableID>
+<keyObject>18F46350-25F8-8EA7-7EDC-EF023BD32075</keyObject>
+<referredKeyID>18F46350-25F8-8EA7-7EDC-EF023BD32075</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CMP_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -8,7 +8,7 @@
 <item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
 </engineerTo>
 <targetPk>8524FA10-8E7D-40FE-92A5-765A24EFE107</targetPk>
-<identifying>true</identifying>
+<identifying>false</identifying>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>*</sourceCardinality>

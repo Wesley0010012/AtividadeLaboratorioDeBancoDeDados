@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB047441-768B-44E0-7587-D3EF7C4D62CD" name="PAGAMENTO">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR OS PAGAMENTOS ASSOCIADOS A UMA COMPRA]]></commentInRDBMS>
+<generatorID>9B4F5ABF-07F7-E728-6E97-415EF3F97C7E</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PGM_ID" id="F991EDF1-36B0-9CA6-762C-EE43A8DD7422">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO PAGAMENTO]]></commentInRDBMS>
+<generatorID>1124123B-7997-2D06-2C12-3ADC7F0B61CE</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PGM_PARCELAS" id="8B783588-C4F2-89D6-15D5-03D675D3C27F">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[QUANTIDADE DE PARCELAS ASSOCIADAS AO PRODUTO]]></commentInRDBMS>
+<generatorID>3DF077B8-D477-4D5F-E853-B46E58B4FDE9</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PGM_CMP_ID" id="E6C48956-7524-C518-10D1-24B6662635B3">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:56:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE COMPRA AGREGADA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65745A4A-15EF-DD05-A4CD-E1A728096362" referredColumn="E94939DA-7014-F092-2CD6-387BE101478F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C6FEBCB-993C-7735-1EDB-8202CFD990F4" name="PK_PGM">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>8524FA10-8E7D-40FE-92A5-765A24EFE107</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F991EDF1-36B0-9CA6-762C-EE43A8DD7422"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B24C4F3A-33C4-A360-107A-4A55BFA581E4" name="FK_PGM_CMP">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>ECA90D1A-E94B-2B4C-ED44-6C2E2172B8CD</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6C48956-7524-C518-10D1-24B6662635B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

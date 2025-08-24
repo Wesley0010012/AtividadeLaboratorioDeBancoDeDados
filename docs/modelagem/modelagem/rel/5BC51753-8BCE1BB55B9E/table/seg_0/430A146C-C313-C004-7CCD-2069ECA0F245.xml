@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="430A146C-C313-C004-7CCD-2069ECA0F245" name="PRODUTO_CATEGORIA">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE PRODUTOS E CATEGORIAS DE UM PRODUTO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUTO_PRD_ID" id="F2CD225B-B6D9-9B3A-C4EA-42D29E6419F4">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C498DC0C-59A3-A829-6A4B-7BD0EC9E3BE5" referredColumn="0A10B514-5132-FF9C-150F-787818383910"/>
+</associations>
+</Column>
+<Column name="CATEGORIA_PRODUTO_CTP_ID" id="D5FC57E5-E1FD-8D3A-6599-FE321E38EAD1">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CDD0291A-1081-E5EB-6B36-54C13F173722" referredColumn="28F4BD67-5B28-FF80-9F9E-A6CE118F50EA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A48DD474-3695-3FE5-A34A-D393E84F884C" name="PRODUTO_CATEGORIA_PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2CD225B-B6D9-9B3A-C4EA-42D29E6419F4"/>
+<colUsage columnID="D5FC57E5-E1FD-8D3A-6599-FE321E38EAD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7570421-240C-B9AA-57C9-BF6D0B3A4E99" name="PRODUTO_CATEGORIA_PRODUTO_FK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>EA356879-1F6B-B919-35FE-75F107B4BB84</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2CD225B-B6D9-9B3A-C4EA-42D29E6419F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B82309B1-55F7-AAB6-A54D-2BF62ABA484F" name="PRODUTO_CATEGORIA_CATEGORIA_PRODUTO_FK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>EA356879-1F6B-B919-35FE-75F107B4BB84</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5FC57E5-E1FD-8D3A-6599-FE321E38EAD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

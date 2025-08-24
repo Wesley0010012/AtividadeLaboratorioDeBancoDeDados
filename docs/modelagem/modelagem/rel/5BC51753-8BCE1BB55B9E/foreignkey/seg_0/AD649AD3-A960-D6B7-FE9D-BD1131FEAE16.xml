@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AD649AD3-A960-D6B7-FE9D-BD1131FEAE16" containerWithKeyObject="3112DCC5-854D-9E38-24F3-5B9D2B71C798" localFKIndex="8D4570E8-DC36-B191-C78A-8BA2B2D00808" name="FK_HSC_STC">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE SITUAÇÕES DE COMPRA E HISTÓRICO DE SITUAÇÕES DE UMA COMPRA]]></commentInRDBMS>
+<generatorID>7819492A-4C3B-05B2-8CFF-F17F557CCECC</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>SITUACAO_COMPRA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5C9B34D3-428F-B00B-35D3-3B4872688BA9</referredTableID>
+<keyObject>4AE2C6A0-C3CF-88F2-A091-C46AEB13A260</keyObject>
+<referredKeyID>4AE2C6A0-C3CF-88F2-A091-C46AEB13A260</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>STC_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

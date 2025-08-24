@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAA1016A-1DEB-1E5D-EBAE-A82CD79563A6" name="AVALIACAO_COMPRA">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL PELA PERSISTÊNCIA DE AVALIAÇÕES DE COMPRAS]]></commentInRDBMS>
+<generatorID>50B1F904-8816-876B-634C-DA70F6700AB2</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ALC_ID" id="E42F7F5F-BBB7-1CF7-D747-04824A24B666">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DA AVALIAÇÃO]]></commentInRDBMS>
+<generatorID>4E3D617F-636D-FD0F-0619-5A228A6E5978</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALC_SCORE" id="A366B177-F7E2-7A78-A652-0CED46699946">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[SCORE DADO A COMPRA]]></commentInRDBMS>
+<generatorID>3CAEFE52-EC10-EB1A-DD31-4C21C75CB21A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALC_TITULO" id="0AB91672-34D8-DC9D-9491-44792CA4E30C">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[TÍTULO DA AVALIAÇÃO]]></commentInRDBMS>
+<generatorID>4EFA2BA2-2B6B-8456-932D-44C9894617CA</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90 CHAR</dataTypeSize>
+<ownDataTypeParameters>90 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALC_MENSAGEM" id="975FDF76-1DCC-84CF-237D-0BB79A1A1B6C">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[MENSAGEM DA AVALIAÇÃO]]></commentInRDBMS>
+<generatorID>61049C60-C5F0-0656-C8AE-726B2DD9E0F2</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALC_DATA_HORA_CRIACAO" id="75E0642D-AEC1-3216-B29E-BE7F72FDA785">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DA INSCRIÇÃO DA AVALIAÇÃO]]></commentInRDBMS>
+<generatorID>F036D642-ADF7-24B3-08D3-0D2982944820</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALC_CMP_ID" id="871050D2-C32C-8754-AD93-8464FD694870">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:56:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE COMPRA AGREGADA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CEBADBC-8F2A-092B-8721-07283395C060" referredColumn="E94939DA-7014-F092-2CD6-387BE101478F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D5C179F-FAD3-DA4C-58C9-6EAC691916E5" name="ALC_PK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>4E09D113-2065-2FD7-660E-92F6ADEA583C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E42F7F5F-BBB7-1CF7-D747-04824A24B666"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90D7DB04-1C9A-9C71-E232-A49508AB726D" name="FK_ALC_CMP">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>A76EA6A3-02D8-F83F-B1F6-8DC02C2B7A76</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="871050D2-C32C-8754-AD93-8464FD694870"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

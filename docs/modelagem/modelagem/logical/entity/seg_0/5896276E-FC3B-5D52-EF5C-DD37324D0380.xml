@@ -47,21 +47,6 @@
 <dataTypeSize>40 CHAR</dataTypeSize>
 <ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ETD_ID" id="E3EB3C78-550A-A699-5BD3-A1299B88320C">
-<createdBy>henry</createdBy>
-<createdTime>2025-08-22 02:44:42 UTC</createdTime>
-<generatorID>1E64D404-069B-1791-42BF-EFA176AB344A</generatorID>
-<ownerDesignName>modelagem</ownerDesignName>
-<engineerTo>
-<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
-</engineerTo>
-<referedAttribute>3781D636-6F64-30F0-2E69-F0E1BB7FB39C</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="7BC68C2A-F849-3F33-A5C4-A591E0582B62" name="CIDADE PK">
@@ -75,7 +60,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>F490493F-9004-9891-1D07-F8C8B0C741D6</attributeRef>
-<attributeRef>E3EB3C78-550A-A699-5BD3-A1299B88320C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

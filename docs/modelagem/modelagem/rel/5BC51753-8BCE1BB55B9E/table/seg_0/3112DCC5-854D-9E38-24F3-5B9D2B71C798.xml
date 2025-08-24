@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3112DCC5-854D-9E38-24F3-5B9D2B71C798" name="HISTORICO_SITUACAO_COMPRA">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR O HISTÓRICO DE SITUAÇÕES DE UMA COMPRA]]></commentInRDBMS>
+<generatorID>EA987264-14E3-6449-A1B5-FE04871D3A32</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HSC_ID" id="3041388F-97BB-51CB-FE99-F8354C5EF328">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO PARA O HISTÓRICO DE SITUAÇÃO]]></commentInRDBMS>
+<generatorID>48610A78-FC95-C02D-D348-65995864500C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HSC_DATA_ATUALIZACAO" id="FCD1D5D3-2AEE-8A25-CB76-B0F0FA561B51">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA E HORA DA ÚLTIMA ATUALIZAÇÃO]]></commentInRDBMS>
+<generatorID>93089612-1092-B028-84D7-7ABA89EBF537</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HSC_STC_ID" id="D7D75CB2-B652-6AF2-8A2F-D863AAFFDE1B">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE HISTÓRICO DE COMPRA AGREGADA]]></commentInRDBMS>
+<generatorID>8A6138FE-C8F1-0AB6-85BA-D5ECB545FD75</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD649AD3-A960-D6B7-FE9D-BD1131FEAE16" referredColumn="55A59407-5677-146C-EAFD-372ABB2DB86E"/>
+</associations>
+</Column>
+<Column name="HSC_CMP_ID" id="0F294355-EE53-EE70-C1D2-9A335F5D0072">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:56:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE COMPRA AGREGADA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8819B86-843E-638C-307D-8BC5E5446DFE" referredColumn="E94939DA-7014-F092-2CD6-387BE101478F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB887C6C-32B1-D693-AF08-45DE2B9F7871" name="PK_HSC">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>2005BED3-D806-2842-70EF-3FC2A24EE062</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3041388F-97BB-51CB-FE99-F8354C5EF328"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5E6144E-10CC-AC4A-79BF-5FF61B0AED16" name="FK_HSC_CMP">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>6B95C7A7-B4D7-48A7-4386-E064DE93CC86</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F294355-EE53-EE70-C1D2-9A335F5D0072"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D4570E8-DC36-B191-C78A-8BA2B2D00808" name="FK_HSC_STC">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>7819492A-4C3B-05B2-8CFF-F17F557CCECC</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7D75CB2-B652-6AF2-8A2F-D863AAFFDE1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

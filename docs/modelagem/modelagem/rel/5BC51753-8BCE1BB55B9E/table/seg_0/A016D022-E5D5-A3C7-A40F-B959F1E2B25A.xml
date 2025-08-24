@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A016D022-E5D5-A3C7-A40F-B959F1E2B25A" name="CIDADE">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR CIDADES]]></commentInRDBMS>
+<generatorID>5896276E-FC3B-5D52-EF5C-DD37324D0380</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CDD_ID" id="58BE1C9A-EECF-6FB8-43AB-E9A56162F967">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO PARA CIDADE]]></commentInRDBMS>
+<generatorID>F490493F-9004-9891-1D07-F8C8B0C741D6</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CDD_NOME" id="2E75414A-B28D-53B3-ED02-9A3D78CA6A8F">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[NOME DA CIDADE]]></commentInRDBMS>
+<generatorID>D9BBEFF9-30C0-0219-C473-85BCA704C764</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CDD_ETD_ID" id="C6CAC5BA-3527-A6DF-593C-D8995EFA1F9E">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE ESTADO AGREGADO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E818E78-BD15-73F3-2F55-DE0422D6914A" referredColumn="EFBE016F-13E1-BDA7-0BC1-B8DAF03A7A10"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47D2E734-82CA-0E57-4EBD-91044EA68FFC" name="PK_CDD">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>7BC68C2A-F849-3F33-A5C4-A591E0582B62</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58BE1C9A-EECF-6FB8-43AB-E9A56162F967"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E87791F-F1B1-72AB-66E7-021B983C3625" name="FK_CDD_ETD">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>1E64D404-069B-1791-42BF-EFA176AB344A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6CAC5BA-3527-A6DF-593C-D8995EFA1F9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

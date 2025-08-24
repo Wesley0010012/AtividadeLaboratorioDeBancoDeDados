@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AA7A4833-4A4D-66F0-3F2B-ACB245162699" containerWithKeyObject="3F675FBB-0F06-977B-B906-0320ECB585CC" localFKIndex="A517A652-2950-D63D-5C60-5D23FCF6F9C3" name="FK_VDD_CEP">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE VENDEDORES E CEPS]]></commentInRDBMS>
+<generatorID>DCAC4B29-95BD-7416-29B8-A7E8985AD291</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>CEP</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2284F105-648C-4C2D-3C6C-DD0F1EB4FEBC</referredTableID>
+<keyObject>BB039179-3826-06BF-FE73-09381DCD8743</keyObject>
+<referredKeyID>BB039179-3826-06BF-FE73-09381DCD8743</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CEP_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

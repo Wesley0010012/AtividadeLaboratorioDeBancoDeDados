@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6E818E78-BD15-73F3-2F55-DE0422D6914A" containerWithKeyObject="A016D022-E5D5-A3C7-A40F-B959F1E2B25A" localFKIndex="7E87791F-F1B1-72AB-66E7-021B983C3625" name="FK_CDD_ETD">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE CIDADES E ESTADOS]]></commentInRDBMS>
+<generatorID>1E64D404-069B-1791-42BF-EFA176AB344A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>ESTADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9D1E87D1-D461-D2BA-FA63-9E1632B7C0E4</referredTableID>
+<keyObject>0633E55E-5475-1799-6654-BF61C6AA41FD</keyObject>
+<referredKeyID>0633E55E-5475-1799-6654-BF61C6AA41FD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ETD_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

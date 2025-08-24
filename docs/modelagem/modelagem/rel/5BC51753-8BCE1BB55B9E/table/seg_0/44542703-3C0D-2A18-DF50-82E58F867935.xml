@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44542703-3C0D-2A18-DF50-82E58F867935" name="CLIENTE">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR OS CLIENTES]]></commentInRDBMS>
+<generatorID>A69745EA-DA2B-BBB3-2115-EBADC6BDEB9C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLI_ID" id="7D70B69E-B270-2021-82FE-E8216BDF4DD7">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO CLIENTE]]></commentInRDBMS>
+<generatorID>AB299D57-3A6C-8123-B52D-2F7E3D84B0A0</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLI_ASSINATURA" id="2F9A36BF-40E4-FA10-51EE-4309A07FDC95">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[ASSINATURA DO CLIENTE]]></commentInRDBMS>
+<generatorID>B03798E9-0FC9-EAAB-BB3F-207293E73C76</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLI_CEP_ID" id="3B3DF19C-A2A9-980B-2F0C-F6C88BDD2E3D">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE CEP AGREGADO]]></commentInRDBMS>
+<generatorID>A267C63B-3545-C694-BAC2-10026B31A03D</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06C51DCC-98D9-FB6E-5F07-1F2C2A55FD1A" referredColumn="332DA7ED-8280-2882-AE40-A2E24C2B9ED9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="676461F7-9FA1-94EB-F2BA-D795E79D2A3A" name="PK_CLI">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>1B13D695-536C-2809-ABD6-12D56949DE06</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D70B69E-B270-2021-82FE-E8216BDF4DD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CA70932-93D0-610E-4343-1E7FA4C28475" name="CLIENTE__IDX">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B583D24B-40B1-F49F-0BE2-82E81FD95511</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3B3DF19C-A2A9-980B-2F0C-F6C88BDD2E3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD6D093C-CE65-454C-FDB2-AD61C5DCEE2C" name="FK_CLI_CEP">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<generatorID>B583D24B-40B1-F49F-0BE2-82E81FD95511</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B3DF19C-A2A9-980B-2F0C-F6C88BDD2E3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

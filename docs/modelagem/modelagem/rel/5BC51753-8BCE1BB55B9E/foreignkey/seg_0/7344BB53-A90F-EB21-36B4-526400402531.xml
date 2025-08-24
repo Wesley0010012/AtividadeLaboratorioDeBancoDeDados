@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7344BB53-A90F-EB21-36B4-526400402531" containerWithKeyObject="2CBAAD5C-DBC2-CA78-6D43-E150655C673B" localFKIndex="3BB97BE5-9994-1DEA-E8C7-BB8719770F69" name="TRANSACOES_PAGAMENTO_PAGAMENTO_FK">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE PAGAMENTOS E TRANSAÇÕES DE UM PAGAMENTO]]></commentInRDBMS>
+<generatorID>B0A17A9D-B7E8-1D45-7636-85493DEE2225</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>PAGAMENTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BB047441-768B-44E0-7587-D3EF7C4D62CD</referredTableID>
+<keyObject>7C6FEBCB-993C-7735-1EDB-8202CFD990F4</keyObject>
+<referredKeyID>7C6FEBCB-993C-7735-1EDB-8202CFD990F4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PGM_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

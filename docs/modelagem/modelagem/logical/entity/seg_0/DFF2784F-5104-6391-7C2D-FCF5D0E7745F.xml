@@ -46,6 +46,21 @@
 <dataTypeSize>60 CHAR</dataTypeSize>
 <ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="CEP_ID" id="C7229C1F-B766-A79F-9974-45E939A86FE2">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 01:48:00 UTC</createdTime>
+<generatorID>DCAC4B29-95BD-7416-29B8-A7E8985AD291</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<referedAttribute>281CDC07-2BFD-0D5E-3281-780CC4AAA4BE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="998B0301-A722-9961-9E4C-13D0D0FDAE9C" name="VENDEDOR PK">

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D8819B86-843E-638C-307D-8BC5E5446DFE" containerWithKeyObject="3112DCC5-854D-9E38-24F3-5B9D2B71C798" localFKIndex="B5E6144E-10CC-AC4A-79BF-5FF61B0AED16" name="FK_HSC_CMP">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELA INTERAÇÃO ENTRE COMPRAS E HISTÓRICO DE SITUAÇÕES DE UMA COMPRA]]></commentInRDBMS>
+<generatorID>6B95C7A7-B4D7-48A7-4386-E064DE93CC86</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>COMPRA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FBF8F452-8D17-9A57-67F0-0162E7EFA85C</referredTableID>
+<keyObject>18F46350-25F8-8EA7-7EDC-EF023BD32075</keyObject>
+<referredKeyID>18F46350-25F8-8EA7-7EDC-EF023BD32075</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CMP_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

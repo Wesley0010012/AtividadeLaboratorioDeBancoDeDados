@@ -79,51 +79,6 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ETD_ID" id="74B53A0A-6CDA-643D-D3AC-04778AE69D69">
-<createdBy>henry</createdBy>
-<createdTime>2025-08-22 20:10:04 UTC</createdTime>
-<generatorID>29CF655D-2AAB-A25D-AB40-6CC5F83BDA6C</generatorID>
-<ownerDesignName>modelagem</ownerDesignName>
-<engineerTo>
-<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
-</engineerTo>
-<referedAttribute>E3EB3C78-550A-A699-5BD3-A1299B88320C</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="VDD_ID" id="4EF537F8-4EAD-ED83-C397-A513994B71AC">
-<createdBy>henry</createdBy>
-<createdTime>2025-08-23 18:28:57 UTC</createdTime>
-<generatorID>DCAC4B29-95BD-7416-29B8-A7E8985AD291</generatorID>
-<ownerDesignName>modelagem</ownerDesignName>
-<engineerTo>
-<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
-</engineerTo>
-<referedAttribute>143D3A05-5989-4F3E-7EE7-236233F146DF</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="CLI_ID" id="F8D85A81-AE58-F1B7-8DED-1AFEEB67EFAA">
-<createdBy>henry</createdBy>
-<createdTime>2025-08-23 18:30:11 UTC</createdTime>
-<generatorID>B583D24B-40B1-F49F-0BE2-82E81FD95511</generatorID>
-<ownerDesignName>modelagem</ownerDesignName>
-<engineerTo>
-<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
-</engineerTo>
-<referedAttribute>AB299D57-3A6C-8123-B52D-2F7E3D84B0A0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4D6396D8-499B-51AE-1B58-C41705626B2C" name="CEP PK">
@@ -136,8 +91,6 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>32B8206B-DCDE-4FF8-EDF9-94219A29C311</attributeRef>
-<attributeRef>74B53A0A-6CDA-643D-D3AC-04778AE69D69</attributeRef>
 <attributeRef>281CDC07-2BFD-0D5E-3281-780CC4AAA4BE</attributeRef>
 </usedAttributes>
 </identifier>

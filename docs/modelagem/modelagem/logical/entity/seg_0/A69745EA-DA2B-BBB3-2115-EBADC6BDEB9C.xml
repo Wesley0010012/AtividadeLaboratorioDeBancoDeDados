@@ -45,6 +45,21 @@
 <dataTypeSize>60 CHAR</dataTypeSize>
 <ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="CEP_ID" id="A267C63B-3545-C694-BAC2-10026B31A03D">
+<createdBy>henry</createdBy>
+<createdTime>2025-08-24 01:48:10 UTC</createdTime>
+<generatorID>B583D24B-40B1-F49F-0BE2-82E81FD95511</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
+</engineerTo>
+<referedAttribute>281CDC07-2BFD-0D5E-3281-780CC4AAA4BE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="1B13D695-536C-2809-ABD6-12D56949DE06" name="CLIENTE PK">
