@@ -17,21 +17,6 @@
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<attribute name="ITC_FRETE" id="CAA2A80B-CDFD-5A54-40A5-54B2568AAD0A">
-<createdBy>henry</createdBy>
-<createdTime>2025-08-23 18:34:25 UTC</createdTime>
-<comment><![CDATA[FRETE ASSOCIADO AO ITEM]]></comment>
-<ownerDesignName>modelagem</ownerDesignName>
-<engineerTo>
-<item key="5BC51753-FBBA-00DE-9523-8BCE1BB55B9E" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,4,2</ownDataTypeParameters>
-</attribute>
 <attribute name="ITC_QUANTIDADE" id="AA600248-5DAE-F11E-90B3-EE8CECDF25DC">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-23 18:34:49 UTC</createdTime>

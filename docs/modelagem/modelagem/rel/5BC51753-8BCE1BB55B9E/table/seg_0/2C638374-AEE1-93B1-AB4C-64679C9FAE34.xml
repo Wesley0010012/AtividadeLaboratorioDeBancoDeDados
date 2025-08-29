@@ -37,7 +37,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A56644B4-A35A-0989-070D-CF1426081C40" name="TIPO_PAGAMENTO_PK">
+<ind_PK_UK id="A56644B4-A35A-0989-070D-CF1426081C40" name="PK_TPG">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <generatorID>0B46D43B-09A0-08F6-E186-7CA12B0EE5D4</generatorID>

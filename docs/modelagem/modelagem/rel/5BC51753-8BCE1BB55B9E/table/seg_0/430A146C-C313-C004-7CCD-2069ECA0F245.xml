@@ -8,9 +8,10 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="PRODUTO_PRD_ID" id="F2CD225B-B6D9-9B3A-C4EA-42D29E6419F4">
+<Column name="PRC_PRD_ID" id="F2CD225B-B6D9-9B3A-C4EA-42D29E6419F4">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[CHAVE ESTRANGEIRA REFERENCIAL AO PRODUTO]]></commentInRDBMS>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,9 +24,10 @@
 <colAssociation fkAssociation="C498DC0C-59A3-A829-6A4B-7BD0EC9E3BE5" referredColumn="0A10B514-5132-FF9C-150F-787818383910"/>
 </associations>
 </Column>
-<Column name="CATEGORIA_PRODUTO_CTP_ID" id="D5FC57E5-E1FD-8D3A-6599-FE321E38EAD1">
+<Column name="PRC_CTP_ID" id="D5FC57E5-E1FD-8D3A-6599-FE321E38EAD1">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[CHAVE ESTRANGEIRA REFERENCIAL DA CATEGORIA DO PRODUTO]]></commentInRDBMS>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,7 +42,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A48DD474-3695-3FE5-A34A-D393E84F884C" name="PRODUTO_CATEGORIA_PK">
+<ind_PK_UK id="A48DD474-3695-3FE5-A34A-D393E84F884C" name="PK_PRC">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <ownerDesignName>modelagem</ownerDesignName>
@@ -52,7 +54,7 @@
 <colUsage columnID="D5FC57E5-E1FD-8D3A-6599-FE321E38EAD1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E7570421-240C-B9AA-57C9-BF6D0B3A4E99" name="PRODUTO_CATEGORIA_PRODUTO_FK">
+<ind_PK_UK id="E7570421-240C-B9AA-57C9-BF6D0B3A4E99" name="FK_PRC_PRD">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <generatorID>EA356879-1F6B-B919-35FE-75F107B4BB84</generatorID>
@@ -63,7 +65,7 @@
 <colUsage columnID="F2CD225B-B6D9-9B3A-C4EA-42D29E6419F4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B82309B1-55F7-AAB6-A54D-2BF62ABA484F" name="PRODUTO_CATEGORIA_CATEGORIA_PRODUTO_FK">
+<ind_PK_UK id="B82309B1-55F7-AAB6-A54D-2BF62ABA484F" name="FK_PRC_CTP">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <generatorID>EA356879-1F6B-B919-35FE-75F107B4BB84</generatorID>

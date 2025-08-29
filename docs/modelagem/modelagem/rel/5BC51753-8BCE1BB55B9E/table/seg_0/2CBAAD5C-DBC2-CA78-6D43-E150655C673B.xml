@@ -36,9 +36,10 @@
 <ownDataTypeParameters>,6,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PAGAMENTO_PGM_ID" id="60354205-B742-E526-D36B-703806C301BE">
+<Column name="TNP_PGM_ID" id="60354205-B742-E526-D36B-703806C301BE">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO REFERENCIAL AO PAGAMENTO]]></commentInRDBMS>
 <generatorID>FA23B83C-9EF6-866C-1962-2A5E08291FBD</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -52,9 +53,10 @@
 <colAssociation fkAssociation="7344BB53-A90F-EB21-36B4-526400402531" referredColumn="F991EDF1-36B0-9CA6-762C-EE43A8DD7422"/>
 </associations>
 </Column>
-<Column name="TIPO_PAGAMENTO_TPG_ID" id="7DBD5430-ACCE-935D-1BE5-E7056710F98D">
+<Column name="TNP_TPG_ID" id="7DBD5430-ACCE-935D-1BE5-E7056710F98D">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO REFERENCIAL AO TIPO DE PAGAMENTO]]></commentInRDBMS>
 <generatorID>F6F64751-78E1-7612-5208-722F56E18681</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -70,7 +72,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="0A5A81A8-5C00-603B-8A40-3D7F915DFE3F" name="TRANSACOES_PAGAMENTO_PK">
+<ind_PK_UK id="0A5A81A8-5C00-603B-8A40-3D7F915DFE3F" name="PK_TNP">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <generatorID>93CF6E6E-8973-54BC-FBCD-5A4D68417900</generatorID>
@@ -80,10 +82,9 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B914E8C9-ED41-A99E-2270-54FCF77EC1F3"/>
-<colUsage columnID="60354205-B742-E526-D36B-703806C301BE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3BB97BE5-9994-1DEA-E8C7-BB8719770F69" name="TRANSACOES_PAGAMENTO_PAGAMENTO_FK">
+<ind_PK_UK id="3BB97BE5-9994-1DEA-E8C7-BB8719770F69" name="FK_TNP_PGM">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <generatorID>B0A17A9D-B7E8-1D45-7636-85493DEE2225</generatorID>
@@ -94,7 +95,7 @@
 <colUsage columnID="60354205-B742-E526-D36B-703806C301BE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="43AB5151-5FBF-A907-B402-CD24E098CD30" name="TRANSACOES_PAGAMENTO_TIPO_PAGAMENTO_FK">
+<ind_PK_UK id="43AB5151-5FBF-A907-B402-CD24E098CD30" name="FK_TNP_TPG">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <generatorID>5E15C266-EA3F-36AF-0699-B4BB8AB88C7E</generatorID>

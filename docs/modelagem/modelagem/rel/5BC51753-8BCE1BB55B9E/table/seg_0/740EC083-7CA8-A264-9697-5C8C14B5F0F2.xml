@@ -50,7 +50,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="8E288262-E950-F353-2496-E0431CA5F4C0" name="CATEGORIA_PRODUTO_PK">
+<ind_PK_UK id="8E288262-E950-F353-2496-E0431CA5F4C0" name="PK_CTP">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <generatorID>DCE4BACF-FF07-56F1-CEBB-70D0B827F686</generatorID>

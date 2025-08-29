@@ -8,9 +8,10 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="PRODUTO_PRD_ID" id="AF071D3D-70C3-7DA4-89B3-5A1D24FC28EA">
+<Column name="ITC_PRD_ID" id="AF071D3D-70C3-7DA4-89B3-5A1D24FC28EA">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[IDENTIFICADOR ESTRANGEIRO REFERENCIAL DO PRODUTO]]></commentInRDBMS>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,52 +24,10 @@
 <colAssociation fkAssociation="874EC4FC-6CD3-0CBB-C47A-270CC37508AE" referredColumn="0A10B514-5132-FF9C-150F-787818383910"/>
 </associations>
 </Column>
-<Column name="COMPRA_COMPRA_ID" id="AB14AE0D-7651-3E2E-D3C7-A3D7CA3925A7">
-<createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<ownerDesignName>modelagem</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ITC_FRETE" id="27B2A5BE-77EE-429F-10C7-B3ACDAF94FDD">
-<createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<comment><![CDATA[FRETE ASSOCIADO AO ITEM]]></comment>
-<generatorID>CAA2A80B-CDFD-5A54-40A5-54B2568AAD0A</generatorID>
-<ownerDesignName>modelagem</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,4,2</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<isRelationshipColumn>true</isRelationshipColumn>
-<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
-</Column>
-<Column name="ITC_QUANTIDADE" id="737E5688-4875-2652-1741-58C97BBEBDD9">
-<createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<comment><![CDATA[QUANTIDADE DO ITEM]]></comment>
-<generatorID>AA600248-5DAE-F11E-90B3-EE8CECDF25DC</generatorID>
-<ownerDesignName>modelagem</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,5,0</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<isRelationshipColumn>true</isRelationshipColumn>
-<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
-</Column>
-<Column name="COMPRA_CMP_ID" id="E1CF2A47-1244-3820-7121-70321E31C6C3">
+<Column name="ITC_CMP_ID" id="E1CF2A47-1244-3820-7121-70321E31C6C3">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:56:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[IDENTIFICADOR ESTRANGEIRO REFERENCIAL DA COMPRA]]></commentInRDBMS>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -81,9 +40,35 @@
 <colAssociation fkAssociation="8F8F54F4-92B0-3146-7D43-3B8C0CD824A4" referredColumn="E94939DA-7014-F092-2CD6-387BE101478F"/>
 </associations>
 </Column>
+<Column name="ITC_QUANTIDADE" id="7F2BCA61-5C3D-52CD-262E-180C03DC03E9">
+<createdBy>FATEC</createdBy>
+<createdTime>2025-08-27 00:57:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[QUANTIDADE DE PRODUTOS COMPRADA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ITC_ID" id="9409164E-D0FB-C9D7-3962-EBD75F498ED0">
+<createdBy>FATEC</createdBy>
+<createdTime>2025-08-27 01:07:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[IDENTIFICADOR INDEXAÇÃO ÚNICO DO ITEM DA COMPRA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5BF9E992-E3CB-A196-AC28-149721C50D2F" name="ITEMS_COMPRA_PK">
+<ind_PK_UK id="5BF9E992-E3CB-A196-AC28-149721C50D2F" name="PK_ITC">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <ownerDesignName>modelagem</ownerDesignName>
@@ -92,10 +77,10 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="AF071D3D-70C3-7DA4-89B3-5A1D24FC28EA"/>
-<colUsage columnID="AB14AE0D-7651-3E2E-D3C7-A3D7CA3925A7"/>
+<colUsage columnID="E1CF2A47-1244-3820-7121-70321E31C6C3"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AFB2117A-CE2B-698A-E9C3-F3CAF11CBB6E" name="ITEMS_COMPRA_PRODUTO_FK">
+<ind_PK_UK id="AFB2117A-CE2B-698A-E9C3-F3CAF11CBB6E" name="FK_ITC_PRD">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <generatorID>36687803-F561-885A-F724-B2E5C0DD7677</generatorID>
@@ -106,7 +91,7 @@
 <colUsage columnID="AF071D3D-70C3-7DA4-89B3-5A1D24FC28EA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="790FD647-352F-8A50-7324-3C7AA6581E5B" name="ITEMS_COMPRA_COMPRA_FK">
+<ind_PK_UK id="790FD647-352F-8A50-7324-3C7AA6581E5B" name="FK_ITC_CMP">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <generatorID>36687803-F561-885A-F724-B2E5C0DD7677</generatorID>
