@@ -9,8 +9,11 @@
 -- Inclui comentários
 @/opt/scripts/ddl/comments.sql
 
--- Inclui sequences:
+-- Inclui sequences
 @/opt/scripts/ddl/sequences.sql
+
+-- Inclui triggers
+@/opt/scripts/ddl/triggers.sql
 
 -- Popula estados
 @/opt/scripts/dml/inserts_estados.sql
