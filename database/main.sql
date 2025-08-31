@@ -39,5 +39,8 @@
 -- Popula categorias produto
 @/opt/scripts/dml/inserts_categorias_produto.sql
 
+-- Inclui constraints
+@/opt/scripts/ddl/constraints.sql
+
 -- Fim
 PROMPT Banco de dados recriado com sucesso!
