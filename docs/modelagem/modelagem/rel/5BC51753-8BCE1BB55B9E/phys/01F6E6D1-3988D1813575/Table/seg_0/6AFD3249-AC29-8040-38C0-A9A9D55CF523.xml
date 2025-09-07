@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="H_CATEGORIA_PRODUTO" directorySegmentName="seg_0" id="6AFD3249-AC29-8040-38C0-A9A9D55CF523">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:41:49 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="HCTP_NOME" id="1838EDAD-F07F-7ED0-59C7-D6202F25AE8D">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:41:49 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HCTP_ID" id="21C71199-4A9E-8EF4-0279-03562C772ECA">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:41:49 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HCTP_DATA_CRIACAO" id="49A1CCC4-0657-85D9-0DEC-B77882C40D39">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:42:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HCTP_NOME_INGLES" id="559CD464-0A5B-6657-7A34-CDD22D1B22EB">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:41:49 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CATEGORIA_PRODUTOv1_PK" id="EC787F5B-3F75-DA1F-55D1-DB99EDDC6823">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:41:49 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

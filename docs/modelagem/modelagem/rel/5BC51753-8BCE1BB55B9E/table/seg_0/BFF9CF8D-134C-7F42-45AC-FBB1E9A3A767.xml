@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFF9CF8D-134C-7F42-45AC-FBB1E9A3A767" name="H_CEP">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:28:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR O HISTORIAMENTO DOS CEPS]]></commentInRDBMS>
+<generatorID>CAEF656C-B07E-052E-B100-BC9CFC3D55BA</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>cepv1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HCEP_ID" id="9C3C99AE-DE24-5898-EC78-3F5EFADC67F4">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:28:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO CEP HISTORIADO]]></commentInRDBMS>
+<generatorID>281CDC07-2BFD-0D5E-3281-780CC4AAA4BE</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HCEP_LATITUDE" id="08CC7E7F-EBDF-A650-17C8-3570C6701032">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:28:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[LATITUDE DO CEP HISTORIADO]]></commentInRDBMS>
+<generatorID>BDB997B6-7BE3-61A1-B55A-912D85570AEF</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HCEP_LONGITUDE" id="3522497C-F63A-717B-F51E-2ED105B6E9B4">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:28:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[LONGITUDE DO CEP HISTORIADO]]></commentInRDBMS>
+<generatorID>160D5495-AE12-67FC-30DD-76BB6E10F710</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HCEP_CDD_ID" id="2CF2EF53-6EC8-AAE1-9C0A-D534D61DBD49">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:28:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE CIDADE AGREGADA AO CEP HISTORIADO]]></commentInRDBMS>
+<generatorID>32B8206B-DCDE-4FF8-EDF9-94219A29C311</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HCEP_DATA_CRIACAO" id="6D065ED5-EBCA-2804-D6FE-6E135BBABE82">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:30:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DE CRIAÇÃO DO CEP HISTORIADO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="013A51E4-698A-7248-911B-CAB4A43DA95F" name="PK_HCEP">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:28:07 UTC</createdTime>
+<generatorID>4D6396D8-499B-51AE-1B58-C41705626B2C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C3C99AE-DE24-5898-EC78-3F5EFADC67F4"/>
+<colUsage columnID="6D065ED5-EBCA-2804-D6FE-6E135BBABE82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

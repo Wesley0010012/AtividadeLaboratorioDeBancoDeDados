@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA9FEFDC-BB16-921A-0F64-DEF7DB4119C9" name="H_ITEMS_COMPRA">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:38:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELO HISTORIAMENTO DA INTERAÇÃO ENTRE COMPRAS E PRODUTOS PRESENTES NO ATO DA COMPRA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>items_comprav1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HITC_PRD_ID" id="41992DDD-13E8-6DB6-C5BB-D10DF8A0B5B7">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:38:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[IDENTIFICADOR ESTRANGEIRO REFERENCIAL DO PRODUTO EM HISTORIAMENTO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HITC_CMP_ID" id="6B160B2B-9097-FA22-600B-BA9C838DF12B">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:38:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[IDENTIFICADOR ESTRANGEIRO REFERENCIAL DA COMPRA EM HISTORIAMENTO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HITC_QUANTIDADE" id="A966EC06-BBFA-786B-B213-CD75A4E7D340">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:38:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[QUANTIDADE DE PRODUTOS COMPRADO EM HISTORIAMENTO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HITC_ID" id="C00D0F4B-C475-EFCF-DE63-74E4A232EDE0">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:38:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[IDENTIFICADOR INDEXAÇÃO ÚNICO DO ITEM DA COMPRA HISTORIADA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HITC_DATA_CRIACAO" id="7B1C7F3D-C486-7948-62AE-DB22E71C38CA">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:40:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DE CRIAÇÃO DO ITEM DA COMPRA HISTORIADO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95435907-333A-4768-F7F1-9164AF77DFA1" name="PK_HITC">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:38:53 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41992DDD-13E8-6DB6-C5BB-D10DF8A0B5B7"/>
+<colUsage columnID="6B160B2B-9097-FA22-600B-BA9C838DF12B"/>
+<colUsage columnID="7B1C7F3D-C486-7948-62AE-DB22E71C38CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

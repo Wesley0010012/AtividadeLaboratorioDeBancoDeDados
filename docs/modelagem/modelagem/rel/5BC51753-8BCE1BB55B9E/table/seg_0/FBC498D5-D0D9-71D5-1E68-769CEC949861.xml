@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBC498D5-D0D9-71D5-1E68-769CEC949861" name="H_AVALIACAO_COMPRA">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL PELA PERSISTÊNCIA DE AVALIAÇÕES DE COMPRAS]]></commentInRDBMS>
+<generatorID>50B1F904-8816-876B-634C-DA70F6700AB2</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>avaliacao_comprav1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HALC_ID" id="30051299-0D18-898F-AEF8-826CFA8AD7C8">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DA AVALIAÇÃO HISTORIADA]]></commentInRDBMS>
+<generatorID>4E3D617F-636D-FD0F-0619-5A228A6E5978</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HALC_SCORE" id="1CC5037B-6AE6-8D25-07EE-46275430EF52">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[SCORE DADO A COMPRA HISTORIADA]]></commentInRDBMS>
+<generatorID>3CAEFE52-EC10-EB1A-DD31-4C21C75CB21A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HALC_TITULO" id="0EB951F8-7409-4401-A51D-2A695AEECEF7">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[TÍTULO DA AVALIAÇÃO HISTORIADA]]></commentInRDBMS>
+<generatorID>4EFA2BA2-2B6B-8456-932D-44C9894617CA</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90 CHAR</dataTypeSize>
+<ownDataTypeParameters>90 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HALC_MENSAGEM" id="F3A7667F-C6EA-7D46-B01B-A540E2649140">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[MENSAGEM DA AVALIAÇÃO HISTORIADA]]></commentInRDBMS>
+<generatorID>61049C60-C5F0-0656-C8AE-726B2DD9E0F2</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HALC_DATA_HORA_CRIACAO" id="68DCB7A9-363D-7818-2E0C-1FF7AD2414A6">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DA INSCRIÇÃO DA AVALIAÇÃO HISTORIADA]]></commentInRDBMS>
+<generatorID>F036D642-ADF7-24B3-08D3-0D2982944820</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HALC_CMP_ID" id="5D9B5A31-C3C0-6010-50AB-72BFA46BAD0A">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE COMPRA AGREGADA HISTORIADA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HALC_DATA_CRIACAO" id="78A39422-146C-BD34-6ABD-136C12B97C4E">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:34:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DE CRIAÇÃO DO DA AVALIAÇÃO DE COMPRA HISTORIADA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26B52803-8E7C-27C9-5A35-C99747D1F7A7" name="PK_HALC">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<generatorID>4E09D113-2065-2FD7-660E-92F6ADEA583C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30051299-0D18-898F-AEF8-826CFA8AD7C8"/>
+<colUsage columnID="78A39422-146C-BD34-6ABD-136C12B97C4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,18 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44542703-3C0D-2A18-DF50-82E58F867935" name="CLIENTE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25558ADA-8260-BB1E-DCB9-1F075F2FAA7C" name="H_CLIENTE">
 <createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR OS CLIENTES]]></commentInRDBMS>
+<createdTime>2025-09-05 23:31:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR O HISTORIAMENTO DOS CLIENTES]]></commentInRDBMS>
 <generatorID>A69745EA-DA2B-BBB3-2115-EBADC6BDEB9C</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>clientev1</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CLI_ID" id="7D70B69E-B270-2021-82FE-E8216BDF4DD7">
+<Column name="HCLI_ID" id="88A3B7B8-A542-1641-5CCD-56C8B3B58C0D">
 <createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO CLIENTE]]></commentInRDBMS>
+<createdTime>2025-09-05 23:31:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO CLIENTE HISTORIADO]]></commentInRDBMS>
 <generatorID>AB299D57-3A6C-8123-B52D-2F7E3D84B0A0</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -22,10 +23,10 @@
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CLI_ASSINATURA" id="2F9A36BF-40E4-FA10-51EE-4309A07FDC95">
+<Column name="HCLI_ASSINATURA" id="B5B8A8DA-4B70-B052-45BA-A92FE5E3ADE5">
 <createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[ASSINATURA DO CLIENTE]]></commentInRDBMS>
+<createdTime>2025-09-05 23:31:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[ASSINATURA DO CLIENTE HISTORIADO]]></commentInRDBMS>
 <generatorID>B03798E9-0FC9-EAAB-BB3F-207293E73C76</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -35,46 +36,43 @@
 <ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CLI_CEP_ID" id="3B3DF19C-A2A9-980B-2F0C-F6C88BDD2E3D">
+<Column name="HCLI_CEP_ID" id="314947C0-A0FA-F734-4E1A-2F1F84D3BC62">
 <createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE CEP AGREGADO]]></commentInRDBMS>
+<createdTime>2025-09-05 23:31:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE CEP AGREGADO AO CLIENTE HISTORIADO]]></commentInRDBMS>
 <generatorID>A267C63B-3545-C694-BAC2-10026B31A03D</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="06C51DCC-98D9-FB6E-5F07-1F2C2A55FD1A" referredColumn="332DA7ED-8280-2882-AE40-A2E24C2B9ED9"/>
-</associations>
+</Column>
+<Column name="HCLI_DATA_CRIACAO" id="96F43944-C907-6FF4-D060-5B19A07B4E6B">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:32:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DE CRIAÇÃO DO CLIENTE HISTORIADO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="676461F7-9FA1-94EB-F2BA-D795E79D2A3A" name="PK_CLI">
+<ind_PK_UK id="17D33A23-F755-DA4F-3652-3EEBBBBE04EF" name="CLIENTEv1_PK">
 <createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<createdTime>2025-09-05 23:31:29 UTC</createdTime>
 <generatorID>1B13D695-536C-2809-ABD6-12D56949DE06</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7D70B69E-B270-2021-82FE-E8216BDF4DD7"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="BD6D093C-CE65-454C-FDB2-AD61C5DCEE2C" name="FK_CLI_CEP">
-<createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<generatorID>B583D24B-40B1-F49F-0BE2-82E81FD95511</generatorID>
-<ownerDesignName>modelagem</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="3B3DF19C-A2A9-980B-2F0C-F6C88BDD2E3D"/>
+<colUsage columnID="88A3B7B8-A542-1641-5CCD-56C8B3B58C0D"/>
+<colUsage columnID="96F43944-C907-6FF4-D060-5B19A07B4E6B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

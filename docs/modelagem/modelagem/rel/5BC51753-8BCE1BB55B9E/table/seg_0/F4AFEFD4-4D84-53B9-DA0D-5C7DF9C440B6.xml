@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F4AFEFD4-4D84-53B9-DA0D-5C7DF9C440B6" name="H_TRANSACOES_PAGAMENTO">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO  RESPONSÁVEL POR PERSISTIR O HISTORIAMENTO DAS TRANSAÇÕES ASSOCIADAS A UM PAGAMENTO]]></commentInRDBMS>
+<generatorID>29C18657-1E05-AECB-6E9E-31CE2A56D3F5</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>transacoes_pagamentov1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HTNP_ID" id="0054A3DD-FF98-C438-3B67-C426B8E41F06">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DA TRANSAÇÃO HISTORIADA]]></commentInRDBMS>
+<generatorID>9DCFB186-D711-CC7C-3993-79F6DE59597B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HTNP_VALOR_PAGO" id="23180CD1-A8B7-77E2-2AFE-95EB3889DED5">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[VALOR PAGO NA TRANSAÇÃO HISTORIADA]]></commentInRDBMS>
+<generatorID>9EFFC77F-9B21-F02A-3B6E-63E095E12002</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HTNP_PGM_ID" id="75AB58DC-7779-D251-54A4-9217C5F0ADAB">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO REFERENCIAL AO PAGAMENTO DA TRANSAÇÃO HISTORIADA]]></commentInRDBMS>
+<generatorID>FA23B83C-9EF6-866C-1962-2A5E08291FBD</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HTNP_TPG_ID" id="40B244CC-B34F-5A8F-1DD9-6061C5117B76">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO REFERENCIAL AO TIPO DE PAGAMENTO ASSOCIADO A TRANSAÇÃO HISTORIADA]]></commentInRDBMS>
+<generatorID>F6F64751-78E1-7612-5208-722F56E18681</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HTNP_DATA_CRIACAO" id="07FF5365-0511-CAA1-E956-28FC21EA683E">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:27:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DE CRIAÇÃO DA TRANSAÇÃO DE PAGAMENTO HISTORIADA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="637FC3EF-2472-B095-9406-41BDF461C06F" name="PK_HTNP">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<generatorID>93CF6E6E-8973-54BC-FBCD-5A4D68417900</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0054A3DD-FF98-C438-3B67-C426B8E41F06"/>
+<colUsage columnID="07FF5365-0511-CAA1-E956-28FC21EA683E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

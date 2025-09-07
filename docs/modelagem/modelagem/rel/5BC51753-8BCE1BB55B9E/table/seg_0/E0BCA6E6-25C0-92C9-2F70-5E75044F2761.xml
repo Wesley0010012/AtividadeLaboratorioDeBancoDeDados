@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0BCA6E6-25C0-92C9-2F70-5E75044F2761" name="H_PAGAMENTO">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:12:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO DE HISTORIAMENTO DOS PAGAMENTOS DE UMA COMPRA]]></commentInRDBMS>
+<generatorID>9B4F5ABF-07F7-E728-6E97-415EF3F97C7E</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>pagamentov1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HPGM_ID" id="6E7BCCE0-BCE2-A4CA-1489-C85322DF4F1E">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:12:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO PAGAMENTO HISTORIADO]]></commentInRDBMS>
+<generatorID>1124123B-7997-2D06-2C12-3ADC7F0B61CE</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HPGM_PARCELAS" id="F0CD4950-5B11-3B70-94F6-D37FC5ECF4DF">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:12:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[QUANTIDADE DE PARCELAS ASSOCIADAS AO PRODUTO HISTORIADO]]></commentInRDBMS>
+<generatorID>3DF077B8-D477-4D5F-E853-B46E58B4FDE9</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HPGM_CMP_ID" id="A54834C5-82AE-68F8-5C0F-C35A09BC4B34">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:12:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE COMPRA AGREGADA AO PAGAMENTO HISTORIADO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HPGM_DATA_CRIACAO" id="28E237A5-E661-C3D6-0A78-E86A301197BB">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:23:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DE CRIAÇÃO DO PAGAMENTO HISTORIADO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19750E3B-6DD5-73E2-CDFF-1B5F3DE67AA2" name="PK_HPGM">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:12:11 UTC</createdTime>
+<generatorID>8524FA10-8E7D-40FE-92A5-765A24EFE107</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E7BCCE0-BCE2-A4CA-1489-C85322DF4F1E"/>
+<colUsage columnID="28E237A5-E661-C3D6-0A78-E86A301197BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

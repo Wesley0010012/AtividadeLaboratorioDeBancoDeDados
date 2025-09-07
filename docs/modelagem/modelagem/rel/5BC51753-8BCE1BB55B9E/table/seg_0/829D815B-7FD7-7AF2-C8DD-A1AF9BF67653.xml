@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="829D815B-7FD7-7AF2-C8DD-A1AF9BF67653" name="H_HISTORICO_SITUACAO_COMPRA">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR O HISTÓRICO DE SITUAÇÕES DE UMA COMPRA]]></commentInRDBMS>
+<generatorID>EA987264-14E3-6449-A1B5-FE04871D3A32</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>historico_situacao_comprav1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HSC_ID" id="0456BD39-2C4B-F077-5D9F-853AE36FFCEC">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO PARA O HISTÓRICO DE SITUAÇÃO]]></commentInRDBMS>
+<generatorID>48610A78-FC95-C02D-D348-65995864500C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HSC_DATA_ATUALIZACAO" id="F0B7179E-4547-7017-6B44-F93B2AB5A19E">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA E HORA DA ÚLTIMA ATUALIZAÇÃO]]></commentInRDBMS>
+<generatorID>93089612-1092-B028-84D7-7ABA89EBF537</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HSC_STC_ID" id="C1032AA5-1391-E7ED-E2DB-5AB54BF37F5E">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE HISTÓRICO DE COMPRA AGREGADA]]></commentInRDBMS>
+<generatorID>8A6138FE-C8F1-0AB6-85BA-D5ECB545FD75</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HSC_CMP_ID" id="C667DCF0-B73C-54E9-1F4C-9EDAFB192303">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DE COMPRA AGREGADA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HHSC_DATA_CRIACAO" id="6415D064-81F0-CED0-DEBE-44D523FCEE00">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-07 23:24:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DE CRIAÇÃO DO HISTÓRICO DE SITUAÇÃO DE COMPRA HISTORIADA]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D759FE5-D7C5-C9AF-AC15-CAC7B63DEED0" name="PK_HHSC">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:17 UTC</createdTime>
+<generatorID>2005BED3-D806-2842-70EF-3FC2A24EE062</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0456BD39-2C4B-F077-5D9F-853AE36FFCEC"/>
+<colUsage columnID="6415D064-81F0-CED0-DEBE-44D523FCEE00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

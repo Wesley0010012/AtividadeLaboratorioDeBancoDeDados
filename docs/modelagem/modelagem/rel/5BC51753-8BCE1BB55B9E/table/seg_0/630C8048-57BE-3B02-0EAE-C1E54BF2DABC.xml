@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="630C8048-57BE-3B02-0EAE-C1E54BF2DABC" name="H_PRODUTO_CATEGORIA">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:41:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELACIONAMENTO RESPONSÁVEL PELO HISTORIAMENTO DA INTERAÇÃO ENTRE PRODUTOS E CATEGORIAS DE UM PRODUTO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>produto_categoriav1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HPRC_PRD_ID" id="661B27E0-C5B0-C813-679E-1645FCADE4E0">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:41:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[CHAVE ESTRANGEIRA REFERENCIAL AO PRODUTO EM HISTORIAMENTO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HPRC_CTP_ID" id="6E098B71-E2BD-AB74-40EC-E80828B40521">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:41:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[CHAVE ESTRANGEIRA REFERENCIAL DA CATEGORIA DO PRODUTO EM HISTORIAMENTO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HPRC_DATA_CRIACAO" id="6A2643C2-1741-E4F8-354B-791C8362A63B">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:44:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DE CRIAÇÃO DA RELAÇÃO EM HISTORIAMENTO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CD134663-B1EE-80F4-9656-0335F2C90159" name="PK_HPRC">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:41:28 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="661B27E0-C5B0-C813-679E-1645FCADE4E0"/>
+<colUsage columnID="6E098B71-E2BD-AB74-40EC-E80828B40521"/>
+<colUsage columnID="6A2643C2-1741-E4F8-354B-791C8362A63B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

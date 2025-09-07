@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A826BD0C-C6F0-693F-2A7C-7D69BAECBE99" name="H_ESTADO">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:20:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL POR PERSISTIR O HISTORIAMENTO DOS ESTADOS]]></commentInRDBMS>
+<generatorID>4CADCE25-2517-8913-BF7A-4DDC8292E67A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>estadov1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HETD_ID" id="E9EAE0D0-1581-CB8B-8EDB-2DF39328CC69">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:20:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO ESTADO HISTORIADO]]></commentInRDBMS>
+<generatorID>3781D636-6F64-30F0-2E69-F0E1BB7FB39C</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETD_NOME" id="28F08276-8449-094B-E217-4309FFE98F2B">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:20:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[NOME DO ESTADO HISTORIADO]]></commentInRDBMS>
+<generatorID>93C3553E-F658-5613-A3F0-28BF2B6668CC</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HTED_DATA_CRIACAO" id="86781FD7-3371-2418-4F7E-B06C081560E6">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:22:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DE CRIAÇÃO DO ESTADO HISTORIADO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="044C3685-B50C-BBF4-8769-617BECE8828F" name="PK_HETD">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:20:16 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="E9EAE0D0-1581-CB8B-8EDB-2DF39328CC69"/>
+<colUsage columnID="86781FD7-3371-2418-4F7E-B06C081560E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

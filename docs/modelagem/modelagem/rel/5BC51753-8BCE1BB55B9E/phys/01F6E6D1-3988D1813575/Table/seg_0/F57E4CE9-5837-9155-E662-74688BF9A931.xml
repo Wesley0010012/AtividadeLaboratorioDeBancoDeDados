@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="H_SITUACAO_COMPRA" directorySegmentName="seg_0" id="F57E4CE9-5837-9155-E662-74688BF9A931">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:46 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="HSTC_STATUS" id="0C66BB35-B22A-6EC2-B34C-41580C16B0C7">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:46 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HSTC_ID" id="D5FD4E58-7710-2952-EE21-1D6BE4F0BD0B">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:46 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HSTC_DATA_CRIACAO" id="F6B62C59-A806-9ED6-3856-F23505DD55B1">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:30:48 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SITUACAO_COMPRAv1_PK" id="4D695334-7B9F-F58F-036D-24DB35807F4A">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:46 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

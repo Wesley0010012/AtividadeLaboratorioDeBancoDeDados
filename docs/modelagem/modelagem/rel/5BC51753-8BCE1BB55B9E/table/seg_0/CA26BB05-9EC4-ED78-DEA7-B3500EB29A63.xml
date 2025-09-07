@@ -1,19 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3F675FBB-0F06-977B-B906-0320ECB585CC" name="VENDEDOR">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA26BB05-9EC4-ED78-DEA7-B3500EB29A63" name="H_VENDEDOR">
 <createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<createdTime>2025-09-05 23:33:36 UTC</createdTime>
 <commentInRDBMS><![CDATA[RELAÇÃO RESPONSÁVEL PELAS INFORMAÇÕES DO VENDEDOR]]></commentInRDBMS>
 <generatorID>DFF2784F-5104-6391-7C2D-FCF5D0E7745F</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
+<ordsAlias>vendedorv1</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="VDD_ID" id="07F42977-C389-B126-82A0-ACD197BD2328">
+<Column name="HVDD_ID" id="6699D4E9-18DC-A0F8-CF50-C230B417F387">
 <createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO VENDEDOR
-]]></commentInRDBMS>
+<createdTime>2025-09-05 23:33:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ÚNICO DO VENDEDOR HISTORIADO]]></commentInRDBMS>
 <generatorID>143D3A05-5989-4F3E-7EE7-236233F146DF</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -23,10 +23,10 @@
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="VDD_ASSINATURA" id="D986CFEE-483C-CDDB-8D32-BD800C5606D8">
+<Column name="HVDD_ASSINATURA" id="264629D7-2047-EC60-E59A-92EF7C10DFC2">
 <createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[ASSINATURA DO VENDEDOR]]></commentInRDBMS>
+<createdTime>2025-09-05 23:33:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[ASSINATURA DO VENDEDOR HISTORIADO]]></commentInRDBMS>
 <generatorID>821DA074-5394-574D-4505-098821D11FC0</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -36,46 +36,43 @@
 <ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="VDD_CEP_ID" id="B5B6F6DD-2DBA-32EC-1CC1-2C7097E2FFCD">
+<Column name="HVDD_CEP_ID" id="64D0D261-C4C4-6291-38A4-BEB42C7CCF9C">
 <createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DO CEP AGREGADO]]></commentInRDBMS>
+<createdTime>2025-09-05 23:33:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[CÓDIGO IDENTIFICADOR ESTRANGEIRO DO CEP AGREGADO AO VENDEDOR HISTORIADO]]></commentInRDBMS>
 <generatorID>C7229C1F-B766-A79F-9974-45E939A86FE2</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="AA7A4833-4A4D-66F0-3F2B-ACB245162699" referredColumn="332DA7ED-8280-2882-AE40-A2E24C2B9ED9"/>
-</associations>
+</Column>
+<Column name="HVDD_DATA_CRIACAO" id="23ECD2B8-DE4B-1DAE-AB24-4F3507564060">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:34:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DE CRIAÇÃO DO VENDEDOR HISTORIADO]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5504CFB2-DB81-73F4-2A59-37569CC9F320" name="PK_VDD">
+<ind_PK_UK id="0575BE87-8243-2BFF-FDCA-23568710AA46" name="PK_HVDD">
 <createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
+<createdTime>2025-09-05 23:33:36 UTC</createdTime>
 <generatorID>998B0301-A722-9961-9E4C-13D0D0FDAE9C</generatorID>
 <ownerDesignName>modelagem</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="07F42977-C389-B126-82A0-ACD197BD2328"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="A517A652-2950-D63D-5C60-5D23FCF6F9C3" name="FK_VDD_CEP">
-<createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<generatorID>DCAC4B29-95BD-7416-29B8-A7E8985AD291</generatorID>
-<ownerDesignName>modelagem</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="B5B6F6DD-2DBA-32EC-1CC1-2C7097E2FFCD"/>
+<colUsage columnID="6699D4E9-18DC-A0F8-CF50-C230B417F387"/>
+<colUsage columnID="23ECD2B8-DE4B-1DAE-AB24-4F3507564060"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="H_TRANSACOES_PAGAMENTO" directorySegmentName="seg_0" id="F4AFEFD4-4D84-53B9-DA0D-5C7DF9C440B6">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="HTNP_ID" id="0054A3DD-FF98-C438-3B67-C426B8E41F06">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HTNP_DATA_CRIACAO" id="07FF5365-0511-CAA1-E956-28FC21EA683E">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:27:45 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HTNP_VALOR_PAGO" id="23180CD1-A8B7-77E2-2AFE-95EB3889DED5">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HTNP_TPG_ID" id="40B244CC-B34F-5A8F-1DD9-6061C5117B76">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HTNP_PGM_ID" id="75AB58DC-7779-D251-54A4-9217C5F0ADAB">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TRANSACOES_PAGAMENTOv1_PK" id="637FC3EF-2472-B095-9406-41BDF461C06F">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:25:48 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

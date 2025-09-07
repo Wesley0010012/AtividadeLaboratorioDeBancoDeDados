@@ -14,7 +14,7 @@
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <ownerDesignName>modelagem</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="CEP_CEP_ID" id="3B3DF19C-A2A9-980B-2F0C-F6C88BDD2E3D">
+<ColumnProxy name="CLI_CEP_ID" id="3B3DF19C-A2A9-980B-2F0C-F6C88BDD2E3D">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <ownerDesignName>modelagem</ownerDesignName>
@@ -25,22 +25,15 @@
 <ownerDesignName>modelagem</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
-<indexProxies>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CLIENTE__IDX" id="4CA70932-93D0-610E-4343-1E7FA4C28475">
-<createdBy>henry</createdBy>
-<createdTime>2025-08-24 02:12:09 UTC</createdTime>
-<ownerDesignName>modelagem</ownerDesignName>
-</IndexProxy>
-</indexProxies>
 <foreignKeys>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CLIENTE_CEP_FK" id="BD6D093C-CE65-454C-FDB2-AD61C5DCEE2C">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CLI_CEP" id="BD6D093C-CE65-454C-FDB2-AD61C5DCEE2C">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <ownerDesignName>modelagem</ownerDesignName>
 </ForeignKey>
 </foreignKeys>
 <primaryKeys>
-<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CLIENTE_PK" id="676461F7-9FA1-94EB-F2BA-D795E79D2A3A">
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CLI" id="676461F7-9FA1-94EB-F2BA-D795E79D2A3A">
 <createdBy>henry</createdBy>
 <createdTime>2025-08-24 02:12:09 UTC</createdTime>
 <ownerDesignName>modelagem</ownerDesignName>

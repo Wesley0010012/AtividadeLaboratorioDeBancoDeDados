@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="H_PAGAMENTO" directorySegmentName="seg_0" id="E0BCA6E6-25C0-92C9-2F70-5E75044F2761">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:12:11 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="HPGM_DATA_CRIACAO" id="28E237A5-E661-C3D6-0A78-E86A301197BB">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:23:39 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HPGM_ID" id="6E7BCCE0-BCE2-A4CA-1489-C85322DF4F1E">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:12:11 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HPGM_CMP_ID" id="A54834C5-82AE-68F8-5C0F-C35A09BC4B34">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:12:11 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HPGM_PARCELAS" id="F0CD4950-5B11-3B70-94F6-D37FC5ECF4DF">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:12:11 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PAGAMENTOv1_PK" id="19750E3B-6DD5-73E2-CDFF-1B5F3DE67AA2">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:12:11 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

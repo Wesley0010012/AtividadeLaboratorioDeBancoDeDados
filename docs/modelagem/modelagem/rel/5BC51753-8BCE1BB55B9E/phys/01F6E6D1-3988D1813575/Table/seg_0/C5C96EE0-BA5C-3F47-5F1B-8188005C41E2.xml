@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="H_COMPRA" directorySegmentName="seg_0" id="C5C96EE0-BA5C-3F47-5F1B-8188005C41E2">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:35:07 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CMP_CLI_ID" id="51E9D647-581E-BEBD-B340-94F3FC003BA9">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:35:07 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CMP_ENTREGA__PREVISTA" id="8390119A-4C2E-2545-9F0C-603975066DC7">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:35:07 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CMP_DATA_COMPRA" id="AA8F8267-D12C-2A23-4826-9249288DC7C5">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:35:07 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CMP_VDD_ID" id="E4D38FF3-6C14-5084-BBEF-DE503C244ACF">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:35:07 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMPRAv1_ID" id="E6BAFD43-B42E-420B-7CAC-DD6B3415A820">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:35:07 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CMP_ASSINATURA" id="F9708F2A-DE2E-7EFB-C4C1-36FAEB8405DC">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:35:07 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="COMPRAv1_PK" id="A4E539EB-0887-B1C8-38F3-6CE49B76636F">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-05 23:35:07 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

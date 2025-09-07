@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="H_AVALIACAO_COMPRA" directorySegmentName="seg_0" id="FBC498D5-D0D9-71D5-1E68-769CEC949861">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="HALC_TITULO" id="0EB951F8-7409-4401-A51D-2A695AEECEF7">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HALC_SCORE" id="1CC5037B-6AE6-8D25-07EE-46275430EF52">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HALC_ID" id="30051299-0D18-898F-AEF8-826CFA8AD7C8">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HALC_CMP_ID" id="5D9B5A31-C3C0-6010-50AB-72BFA46BAD0A">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HALC_DATA_HORA_CRIACAO" id="68DCB7A9-363D-7818-2E0C-1FF7AD2414A6">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HALC_DATA_CRIACAO" id="78A39422-146C-BD34-6ABD-136C12B97C4E">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:34:55 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HALC_MENSAGEM" id="F3A7667F-C6EA-7D46-B01B-A540E2649140">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="AVALIACAO_COMPRAv1_PK" id="26B52803-8E7C-27C9-5A35-C99747D1F7A7">
+<createdBy>henry</createdBy>
+<createdTime>2025-09-06 00:28:52 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>
