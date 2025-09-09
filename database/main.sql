@@ -15,6 +15,15 @@
 -- Inclui triggers
 @/opt/scripts/ddl/triggers.sql
 
+-- Inclui tabelas historiamento
+@/opt/scripts/ddl/history.sql
+
+-- Inclui triggers historiamento
+@/opt/scripts/ddl/history-triggers.sql
+
+-- Inclui constraints historiamento
+@/opt/scripts/ddl/history-constraints.sql
+
 -- Popula estados
 @/opt/scripts/dml/inserts_estados.sql
 
