@@ -24,29 +24,29 @@
 -- Inclui constraints historiamento
 @/opt/scripts/ddl/history-constraints.sql
 
--- Popula estados
-@/opt/scripts/dml/inserts_estados.sql
+-- -- Popula estados
+-- @/opt/scripts/dml/inserts_estados.sql
 
--- Popula cidades
-@/opt/scripts/dml/inserts_cidades.sql
+-- -- Popula cidades
+-- @/opt/scripts/dml/inserts_cidades.sql
 
--- Popula ceps
-@/opt/scripts/dml/inserts_ceps.sql
+-- -- Popula ceps
+-- @/opt/scripts/dml/inserts_ceps.sql
 
--- Popula clientes
-@/opt/scripts/dml/inserts_clientes.sql
+-- -- Popula clientes
+-- @/opt/scripts/dml/inserts_clientes.sql
 
--- Popula vendedores
-@/opt/scripts/dml/inserts_vendedores.sql
+-- -- Popula vendedores
+-- @/opt/scripts/dml/inserts_vendedores.sql
 
--- Popula situacao compra
-@/opt/scripts/dml/inserts_situacao_compra.sql
+-- -- Popula situacao compra
+-- @/opt/scripts/dml/inserts_situacao_compra.sql
 
--- Popula tipo pagamento
-@/opt/scripts/dml/inserts_tipo_pagamento.sql
+-- -- Popula tipo pagamento
+-- @/opt/scripts/dml/inserts_tipo_pagamento.sql
 
--- Popula categorias produto
-@/opt/scripts/dml/inserts_categorias_produto.sql
+-- -- Popula categorias produto
+-- @/opt/scripts/dml/inserts_categorias_produto.sql
 
 -- Inclui constraints
 @/opt/scripts/ddl/constraints.sql
