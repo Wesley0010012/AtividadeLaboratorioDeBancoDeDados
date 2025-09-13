@@ -14,8 +14,11 @@
 -- Inclui triggers
 @/opt/scripts/ddl/triggers.sql;
 
--- Inclui tabelas historiamento
+-- Cria tabelas historiamento
 @/opt/scripts/ddl/history.sql;
+
+-- Inclui comentários
+@/opt/scripts/ddl/history-comments.sql;
 
 -- Inclui triggers historiamento
 @/opt/scripts/ddl/history-triggers.sql;
