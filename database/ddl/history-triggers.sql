@@ -44,7 +44,7 @@ BEGIN
         :OLD.CTP_ID,
         :OLD.CTP_NOME,
         :OLD.CTP_NOME_INGLES,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -66,7 +66,7 @@ BEGIN
         :OLD.CEP_LATITUDE,
         :OLD.CEP_LONGITUDE,
         :OLD.CDD_ID,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -86,7 +86,7 @@ BEGIN
         :OLD.CDD_ID,
         :OLD.CDD_NOME,
         :OLD.CDD_ETD_ID,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -106,7 +106,7 @@ BEGIN
         :OLD.CLI_ID,
         :OLD.CLI_ASSINATURA,
         :OLD.CEP_ID,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -120,7 +120,7 @@ BEGIN
         HCMP_ID,
         HCMP_ASSINATURA,
         HCMP_DATA_COMPRA,
-        HCMP_ENTREGA_PREVISTA,
+        HCMP_ENTREGA__PREVISTA,
         HCMP_VDD_ID,
         HCMP_CLI_ID,
         HCMP_DATA_CRIACAO
@@ -129,10 +129,10 @@ BEGIN
         :OLD.CMP_ID,
         :OLD.CMP_ASSINATURA,
         :OLD.CMP_DATA_COMPRA,
-        :OLD.CMP_ENTREGA_PREVISTA,
+        :OLD.CMP_ENTREGA__PREVISTA,
         :OLD.CMP_VDD_ID,
         :OLD.CMP_CLI_ID,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -150,7 +150,7 @@ BEGIN
     VALUES (
         :OLD.ETD_ID,
         :OLD.ETD_NOME,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -172,7 +172,7 @@ BEGIN
         :OLD.HSC_DATA_ATUALIZACAO,
         :OLD.HSC_STC_ID,
         :OLD.HSC_CMP_ID,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -186,6 +186,7 @@ BEGIN
         HITC_PRD_ID,
         HITC_CMP_ID,
         HITC_QUANTIDADE,
+        HITC_PRECO,
         HITC_ID,
         HITC_DATA_CRIACAO
     )
@@ -193,8 +194,9 @@ BEGIN
         :OLD.ITC_PRD_ID,
         :OLD.ITC_CMP_ID,
         :OLD.ITC_QUANTIDADE,
+        :OLD.ITC_PRECO,
         :OLD.ITC_ID,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -212,9 +214,9 @@ BEGIN
     )
     VALUES (
         :OLD.PGM_ID,
-        :OLD.PARCELAS,
-        :OLD.CMP_ID,
-        SYSDATE
+        :OLD.PGM_PARCELAS,
+        :OLD.PGM_CMP_ID,
+        SYSTIMESTAMP
     );
 END;
 /
@@ -238,7 +240,7 @@ BEGIN
         :OLD.PRD_LARGURA,
         :OLD.PRD_PROFUNDIDADE,
         :OLD.PRD_PRECO,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -256,7 +258,7 @@ BEGIN
     VALUES (
         :OLD.PRC_PRD_ID,
         :OLD.PRC_CTP_ID,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -274,7 +276,7 @@ BEGIN
     VALUES (
         :OLD.STC_ID,
         :OLD.STC_STATUS,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -294,9 +296,9 @@ BEGIN
     VALUES (
         :OLD.TNP_ID,
         :OLD.TNP_VALOR_PAGO,
-        :OLD.PGM_ID,
-        :OLD.TPG_ID,
-        SYSDATE
+        :OLD.TNP_PGM_ID,
+        :OLD.TNP_TPG_ID,
+        SYSTIMESTAMP
     );
 END;
 /
@@ -314,7 +316,7 @@ BEGIN
     VALUES (
         :OLD.TPG_ID,
         :OLD.TPG_CATEGORIA,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
@@ -334,7 +336,7 @@ BEGIN
         :OLD.VDD_ID,
         :OLD.VDD_ASSINATURA,
         :OLD.CEP_ID,
-        SYSDATE
+        SYSTIMESTAMP
     );
 END;
 /
