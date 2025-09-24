@@ -1,0 +1,18 @@
+SELECT c.CLI_ID,
+    c.CLI_ASSINATURA,
+    MAX(ultima_compra) AS ULTIMA_COMPRA
+FROM CLIENTE c
+    LEFT JOIN (
+        SELECT CMP_CLI_ID AS CLI_ID,
+            MAX(CMP_DATA_COMPRA) AS ultima_compra
+        FROM COMPRA
+        GROUP BY CMP_CLI_ID
+        UNION ALL
+        SELECT HCMP_CLI_ID AS CLI_ID,
+            MAX(HCMP_DATA_COMPRA) AS ultima_compra
+        FROM H_COMPRA
+        GROUP BY HCMP_CLI_ID
+    ) compras ON c.CLI_ID = compras.CLI_ID
+GROUP BY c.CLI_ID, c.CLI_ASSINATURA
+HAVING MAX(ultima_compra) < ADD_MONTHS(SYSDATE, -6)
+ORDER BY ULTIMA_COMPRA ASC;
