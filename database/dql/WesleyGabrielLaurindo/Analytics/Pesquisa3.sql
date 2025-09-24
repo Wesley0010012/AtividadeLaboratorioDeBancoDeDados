@@ -1,5 +1,5 @@
 -------------------------------------------
---- PESQUISA ESTRATÉGICA DE NÚMERO 5
+--- PESQUISA ANALÍTICA DE NÚMERO 3
 --- Análise do prazo médio de entrega por mês
 ---
 --- Objetivo: monitorar a eficiência do processo de

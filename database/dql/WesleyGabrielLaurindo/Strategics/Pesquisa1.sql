@@ -1,10 +1,13 @@
 -------------------------------------------
 --- PESQUISA ESTRATÉGICA DE NÚMERO 1
---- Identificar as categorias que mais
---- tem produtos catalogados no Sistema
---- Objetivo: gerar estratégias de marketing
---- direcionado à estes clientes com produtos
---- mais chamativos, assim como promoções
+--- Identificação das categorias com maior
+--- número de produtos catalogados no sistema
+--- 
+--- Objetivo: analisar o portfólio de produtos para
+--- definir estratégias de marketing mais eficazes,
+--- incluindo promoções, campanhas direcionadas e
+--- ações de destaque para categorias com maior
+--- potencial de engajamento junto aos clientes.
 -------------------------------------------
 SELECT ctp.CTP_NOME AS CATEGORIA,
     COUNT(DISTINCT pc.PRC_PRD_ID) AS TOTAL_PRODUTOS
